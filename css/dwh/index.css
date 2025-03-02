@@ -56,3 +56,16 @@ dwh-card {
 description-block {
   padding: var(--space-l);
 }
+
+split-panel {
+  > figure {
+    img {
+      block-size: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .text-block {
+    padding: var(--space-l);
+  }
+}

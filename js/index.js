@@ -5,6 +5,7 @@ const elements = [
   "card-row",
   "dwh-card",
   "description-block",
+  "split-panel",
 ];
 
 elements.forEach((tagName) => {

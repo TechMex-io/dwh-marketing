@@ -89,3 +89,7 @@
   );
   flex-grow: 999;
 }
+
+[data-reverse] {
+  flex-direction: row-reverse;
+}

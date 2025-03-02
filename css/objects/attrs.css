@@ -1,0 +1,67 @@
+[data-justify="center"] {
+  justify-content: center;
+}
+[data-justify="end"] {
+  justify-content: flex-end;
+}
+[data-justify="start"] {
+  justify-content: flex-start;
+}
+[data-justify="around"] {
+  justify-content: space-around;
+}
+[data-justify="between"] {
+  justify-content: space-between;
+}
+[data-justify="evenly"] {
+  justify-content: space-evenly;
+}
+[data-align="center"] {
+  align-items: center;
+}
+[data-align="end"] {
+  align-items: flex-end;
+}
+[data-align="start"] {
+  align-items: flex-start;
+}
+[data-align="stretch"] {
+  align-items: flex-stretch;
+}
+[data-align="baseline"] {
+  align-items: baseline;
+}
+
+[data-gap="s"] {
+  --gap: 1rem;
+}
+[data-gap="m"] {
+  --gap: 2rem;
+}
+[data-gap="l"] {
+  --gap: 3rem;
+}
+
+[data-padding="s"] {
+  --cluster-padding: var(--layout-cluster-padding-sm);
+}
+[data-padding="m"] {
+  --cluster-padding: var(--layout-cluster-padding-md);
+}
+[data-padding="l"] {
+  --cluster-padding: var(--layout-cluster-padding-lg);
+}
+
+[data-center~="children"] {
+  align-items: center;
+}
+[data-center~="text"] {
+  text-align: center;
+}
+[data-center~="vertically"] {
+  place-content: center;
+}
+
+[data-equal] > * {
+  flex: 1;
+}

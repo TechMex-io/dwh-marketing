@@ -1,0 +1,66 @@
+site-banner,
+site-hero,
+site-description {
+  display: block;
+}
+
+site-banner {
+  background-color: var(--color-tertiary);
+  padding: var(--space-s);
+  text-align: center;
+}
+
+.site-nav {
+  padding: var(--space-m);
+}
+
+site-hero {
+  min-block-size: 80vh;
+  background-image: url("https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  max-inline-size: 90vw;
+  margin-inline: auto;
+}
+
+site-description {
+  padding: var(--space-l);
+  text-align: center;
+  max-inline-size: 80ch;
+  margin-inline: auto;
+}
+
+dwh-card {
+  display: grid;
+  gap: var(--space-s);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+
+  .btn {
+    text-align: center;
+  }
+}
+
+.home-page {
+  /* space out the rows without wrapping */
+  card-row + card-row {
+    margin-block-start: var(--space-l);
+  }
+  dwh-card {
+    padding: var(--space-s);
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-tertiary);
+    }
+  }
+}
+
+.btn {
+  background-color: var(--color-accent);
+  color: var(--color-text-white);
+  padding: var(--space-s);
+}

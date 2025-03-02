@@ -1,0 +1,14 @@
+.home-page {
+  /* space out the rows without wrapping */
+  card-row + card-row {
+    margin-block-start: var(--space-l);
+  }
+  dwh-card {
+    padding: var(--space-s);
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-tertiary);
+    }
+  }
+}

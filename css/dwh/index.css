@@ -1,3 +1,6 @@
+@import "./home.css";
+@import "./projects.css";
+
 site-banner,
 site-hero,
 site-description {
@@ -44,23 +47,12 @@ dwh-card {
   }
 }
 
-.home-page {
-  /* space out the rows without wrapping */
-  card-row + card-row {
-    margin-block-start: var(--space-l);
-  }
-  dwh-card {
-    padding: var(--space-s);
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: var(--color-tertiary);
-    }
-  }
-}
-
 .btn {
   background-color: var(--color-accent);
   color: var(--color-text-white);
   padding: var(--space-s);
+}
+
+description-block {
+  padding: var(--space-l);
 }

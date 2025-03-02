@@ -1,0 +1,9 @@
+.projects-page {
+  site-hero {
+    min-block-size: 50vh;
+  }
+
+  [data-grid] {
+    --col-px-width: 400;
+  }
+}

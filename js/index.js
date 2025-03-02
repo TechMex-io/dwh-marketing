@@ -4,6 +4,7 @@ const elements = [
   "site-description",
   "card-row",
   "dwh-card",
+  "description-block",
 ];
 
 elements.forEach((tagName) => {

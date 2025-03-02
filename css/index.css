@@ -4,4 +4,4 @@
 @import "./elements.css" layer(elements);
 @import "./objects/index.css" layer(objects);
 @import "./objects/attrs.css" layer(objects);
-@import "./dwh.css";
+@import "./dwh/index.css" layer(app);

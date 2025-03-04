@@ -1,6 +1,6 @@
 :root {
   /* FONTS */
-  --ff-sans: "Poppins", sans-serif;
+  --ff-sans: "Cabin Variable", sans-serif;
   --ff-serif: "Libre Baskerville", serif;
 
   /* FONT SIZE */
@@ -44,11 +44,11 @@
   --color-secondary: hsl(40, 80%, 80%);
   --color-tertiary: hsl(0, 0%, 95%);
   --color-accent: hsl(300, 60%, 50%);
-  --color-text: hsl(0, 0%, 20%);
+  --color-text: hsl(201deg 16% 31%);
   --color-text-white: hsl(0, 0%, 95%);
   --color-selection: var(--color-secondary);
   --color-selection-text: var(--color-primary);
 
-  --ff-heading: var(--ff-serif);
+  --ff-heading: var(--ff-sans);
   --ff-body: var(--ff-sans);
 }

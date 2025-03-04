@@ -1,0 +1,11 @@
+.services-page {
+    site-hero {
+      min-block-size: 20vh;
+      max-block-size: 40vh;
+      background-image: url("https://static.wixstatic.com/media/1f7967_b93c3e6e0bcf4db38ac84ae423284c3b~mv2.jpg/v1/fit/w_1486,h_426,q_90,enc_avif,quality_auto/1f7967_b93c3e6e0bcf4db38ac84ae423284c3b~mv2.jpg");
+    }
+  
+    [data-grid] {
+      --col-px-width: 400;
+    }
+  }

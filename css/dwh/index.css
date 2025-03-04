@@ -1,5 +1,6 @@
 @import "./home.css";
 @import "./projects.css";
+@import "./services.css";
 /* cabin-latin-wght-normal */
 @font-face {
   font-family: "Cabin Variable";
@@ -16,6 +17,15 @@
 body {
   color: var(--color-text);
   font-family: var(--ff-body);
+}
+.max-width {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: var(--space-l);
+}
+
+.max-height-hero-text {
+  height: 40vh;
 }
 
 site-banner,

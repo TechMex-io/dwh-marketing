@@ -12,15 +12,9 @@ elements.forEach((tagName) => {
   customElements.define(tagName, class extends HTMLElement {});
 });
 
-// accordion listener to only open one at a time. 
-document.querySelectorAll("details").forEach((details) => {
-  details.addEventListener("toggle", function () {
-    if (this.open) {
-      document.querySelectorAll("details").forEach((otherDetails) => {
-        if (otherDetails !== this) {
-          otherDetails.removeAttribute("open");
-        }
-      });
-    }
+const accordionEl = document.querySelector(".accordion");
+accordionEl.addEventListener("click", function (e) {
+  [...accordionEl.children].forEach((child) => {
+    child.removeAttribute("open");
   });
 });

@@ -91,6 +91,7 @@ split-panel {
   > figure {
     img {
       block-size: 100%;
+      inline-size: 100%;
       object-fit: cover;
     }
   }
@@ -107,7 +108,7 @@ details {
 details summary {
   display: block;
   cursor: pointer;
-  padding: .5em .5em .5em .7em;
+  padding: 0.5em 0.5em 0.5em 0.7em;
   background: var(--color-tertiary);
   font-size: var(--step-0);
   font-weight: bold;
@@ -125,7 +126,7 @@ details[open] summary::before {
 }
 
 details:not([open]) summary:hover,
-details:not([open]) summary:focus {      
+details:not([open]) summary:focus {
   background: #f6f6f6;
   color: #454545;
 }

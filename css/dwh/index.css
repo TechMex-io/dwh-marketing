@@ -73,7 +73,7 @@ site-description {
 dwh-card {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
   border-radius: 1rem;
 
@@ -86,7 +86,7 @@ dwh-card {
   .cardImage {
     transition: transform 0.3s ease-in-out; /* Smooth animation */
   }
-  
+
   .cardImage:hover {
     transform: scale(1.1); /* Enlarges the image by 10% */
   }
@@ -107,7 +107,7 @@ dwh-card {
       content: "•";
       color: black;
       /* font-size: 1.2em; */
-      margin-right: .5rem;
+      margin-inline-end: 0.5rem;
       line-height: 1.75;
     }
 
@@ -117,27 +117,25 @@ dwh-card {
       background-color: var(--color-primary);
       color: white;
       border: none;
-      padding: .3rem 1rem;
+      padding: 0.3rem 1rem;
       border-radius: 2.5rem;
       cursor: pointer;
       text-decoration: none;
-      margin-top: var(--space-xs);
+      margin-block-start: auto;
     }
-  
+
     .icon {
       width: 1em;
       height: 1em;
       fill: currentColor;
-      margin-left: .5rem;
+      margin-inline-start: 0.5rem;
     }
-  
+
     .btn:hover {
       background-color: var(--color-secondary);
     }
   }
 }
-
-
 
 description-block {
   padding: var(--space-l);
@@ -163,7 +161,7 @@ details {
 details summary {
   display: block;
   cursor: pointer;
-  padding: .5em .5em .5em .7em;
+  padding: 0.5em 0.5em 0.5em 0.7em;
   background: var(--color-tertiary);
   font-size: var(--step-0);
   font-weight: bold;
@@ -172,7 +170,7 @@ details summary {
 details summary::before {
   content: "+";
   font-size: 20px;
-  margin-right: 10px;
+  margin-inline-end: 10px;
   transition: transform 0.2s ease;
 }
 
@@ -181,7 +179,7 @@ details[open] summary::before {
 }
 
 details:not([open]) summary:hover,
-details:not([open]) summary:focus {      
+details:not([open]) summary:focus {
   background: #f6f6f6;
   color: #454545;
 }

@@ -43,7 +43,7 @@
       <p>Dogwood Homes Remodeling Process</p>
     </site-banner>
 
-    <main>
+    <container>
       <div class="max-width">
     <!-- section 4 - text box -->
     <div data-container="width:sm">
@@ -270,14 +270,15 @@
       </card-row>
     </section>
     </div>
-<!-- section 7 - where we work -->
-      <container>
-        <div data-center="center:children center:text" data-stack="gap:sm">
-          <!-- TO FIX - this data-stack gap isn't working -->
-          <h4>Where we work</h4>
-          <p>We proudly serve central Arkansas, including Little Rock, North Little Rock and Mamuelle.</p>
-        </div>
-      </container>
+    <!-- section 7 - where we work -->
+    <container>
+    <div class="max-width">
+      <!-- section 2 - basic text -->
+      <div data-stack data-gap="m">
+        <!-- TO FIX - this data-stack gap isn't working -->
+        <h4>Where we work</h4>
+        <p>We proudly serve central Arkansas, including Little Rock, North Little Rock and Mamuelle.</p>
+      </div>
       <card-row data-flex data-columns="3" data-gap="s" data-collapse="s">
         <dwh-card>
           <h5>Little Rock</h5>
@@ -305,6 +306,9 @@
           </ul>
         </dwh-card>
       </card-row>
+    </div>
+    </container>
+
     </main>
 
     <footer class="site-footer">

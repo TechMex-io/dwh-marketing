@@ -77,7 +77,7 @@ dwh-card {
   overflow: hidden;
   border-radius: 1rem;
 
-  .imageContainer {
+  .image-container {
     position: relative;
     overflow: hidden;
     display: inline-block;
@@ -204,4 +204,9 @@ details[open] .accordian-content p:last-child {
 
 details[open] .accordian-content p {
   padding-bottom: 1em;
+}
+
+/* Footer */
+.footerText > p{
+  font-size: var(--step--1);
 }

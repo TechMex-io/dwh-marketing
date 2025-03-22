@@ -60,6 +60,10 @@
     }
   }
 
+  .whereWeWork {
+    padding-top: var(--space-m);
+  }
+
   /* where we work */
   ul {
     list-style: none;

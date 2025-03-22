@@ -31,8 +31,7 @@
 
   <div class="max-width">
     <!-- section 2 - basic text -->
-    <div data-stack data-gap="m">
-      <!-- TO FIX - this data-stack gap isn't working -->
+    <div data-stack data-gap="s">
       <h3>Quality Building & Remodeling in the Little Rock area</h3>
       <p>When you work with Dogwood Homes, we offer you the luxury of choosing the design method that works best for
         you. We provide a complete range of services for every type of home remodeling project</p>
@@ -266,7 +265,7 @@
               <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
                 alt="Dogwood Homes" class="cardImage">
             </div>
-            <article>
+            <article data-stack data-align="start">
               <h5 class="cardTitle">Home Additions</h5>
               <p>Expand your living space with our carefully planned home additions.</p>
               <ul class="customList">
@@ -290,7 +289,7 @@
               <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
                 alt="Dogwood Homes" class="cardImage">
             </div>
-            <article>
+            <article data-stack data-align="start">
               <h5 class="cardTitle">Outdoor Living</h5>
               <p>Create beautiful outdoor spaces for relaxation and entertainment.</p>
               <ul class="customList">
@@ -314,7 +313,7 @@
               <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
                 alt="Dogwood Homes" class="cardImage">
             </div>
-            <article>
+            <article data-stack data-align="start">
               <h5 class="cardTitle">Whole House Remodeling</h5>
               <p>Complete transformation of your home with our comprehensive remodeling services.</p>
               <ul class="customList">
@@ -336,39 +335,36 @@
         </card-row>
       </section>
     </div>
-    <!-- section 7 - where we work -->
+    <!-- section 2 - basic text -->
     <container>
     <div class="max-width">
-      <!-- section 2 - basic text -->
-      <div data-stack data-gap="m">
-        <!-- TO FIX - this data-stack gap isn't working -->
+      <div data-stack data-gap="s">
         <h4>Where we work</h4>
-        <p>We proudly serve central Arkansas, including Little Rock, North Little Rock and Mamuelle.</p>
+        <p>Proudly serving the heart of Central Arkansas! From the vibrant streets of Little Rock and North Little Rock to the charming community of Maumelle, we’re here for you. We also bring our expertise to many of your favorite neighborhoods—because great service starts right where you are!</p>
       </div>
-      <card-row data-flex data-columns="3" data-gap="s" data-collapse="s">
+      <card-row data-flex data-columns="2" data-gap="s" data-collapse="s" class="whereWeWork">
         <dwh-card>
-          <h5>Little Rock</h5>
           <ul>
-            <li>Hieghts Neighborhood</li>
-            <li>Hillcres Neighborhood</li>
+            <li>Chennal Valley</li>
+            <li>Heights</li>
+            <li>Hillcrest</li>
             <li>Cammack Village</li>
-            <li>Chennal</li>
+            <li>Pleasant Valley</li>
+            <li>Brody Creek</li>
+            <li>Woodlands Edge</li>
+            
+            
           </ul>
         </dwh-card>
         <dwh-card>
-          <h5>North Little Rock</h5>
           <ul>
-            <li>One</li>
-            <li>One</li>
-            <li>One</li>
-          </ul>
-        </dwh-card>
-        <dwh-card>
-          <h5>Maumelle</h5>
-          <ul>
-            <li>One</li>
-            <li>One</li>
-            <li>One</li>
+            <li>Otter Creek</li>
+            <li>Walton Heights</li>
+            <li>Lake Wood</li>
+            <li>The Park Hill Historic District</li>
+            <li>Maumelle</li>
+            <li>Indian Hills</li>
+            <li>Shady Valley </li>
           </ul>
         </dwh-card>
       </card-row>
@@ -376,17 +372,40 @@
     </container>
 
     </main>
-
-  <footer class="site-footer">
-    <nav class="footer-nav" data-cluster data-justify="center" data-align="center" data-gap="m">
-      <a href="/">Home</a>
-      <a href="/">Projects</a>
-      <a href="/">LOGO</a>
-      <a href="/">Services</a>
-      <a href="/">Contact</a>
+<!-- This is not doing what I want here, 4 columns across, then I want 2 columns over 2 columns, then a stack of 4  -->
+  <footer class="site-footer max-width" data-flex data-columns="2" data-gap="m" data-collapse="m">
+    <nav data-flex data-columns="2" data-gap="s" data-collapse="s">
+      <article data-stack class="footerText">
+        <h6>Dogwood Homes</h6>
+        <p>Quality craftsmanship and innovative designs for all your remodeling needs. Trusted by homeowners since 2010.</p>
+        <div>Icons here</div>
+      </article>
+      <article data-stack >
+        <h6>Quick Links</h6>
+        <a href="/">Home</a>
+        <a href="/">Services</a>
+        <a href="/">Projects</a>
+        <a href="/">About Us</a>
+        <a href="/">Tesitmonials</a>
+      </article>
+    </nav>
+    <nav data-flex data-columns="2" data-gap="s" data-collapse="s">
+      <article data-stack >
+        <h6>Our Services</h6>
+        <a href="/">Kitchen Remodeling</a>
+        <a href="/">Bathroom Renovations</a>
+        <a href="/">Basement Finishing</a>
+        <a href="/">Home Additions</a>
+        <a href="/">Outdoor Living</a>
+      </article>
+      <article data-stack >
+        <h6>Contact Us</h6>
+        <p>706 N Tyler St, Little Rock, AR 72202</p>
+        <p>(501) 577-9009</p>
+        <p>info@dwhname.com</p>
+      </article>
     </nav>
   </footer>
-
 
 
 

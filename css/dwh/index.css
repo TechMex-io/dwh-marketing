@@ -54,9 +54,9 @@ site-hero {
 main {
   /* turned off because I need some pieces inside main to go full with of screen, can think through how to handle */
   /* max-inline-size: 90vw; */
-  max-inline-size: 1300px;
+  /* max-inline-size: 1300px; */
   margin-inline: auto;
-  padding: var(--space-l);
+  /* padding: var(--space-l); */
 }
 
 site-description {
@@ -66,22 +66,78 @@ site-description {
   margin-inline: auto;
 }
 
+.grey-background {
+  background-color: var(--color-accent-2);
+}
+
 dwh-card {
   display: grid;
-  gap: var(--space-s);
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr auto;
+  overflow: hidden;
+  border-radius: 1rem;
 
-  .btn {
-    text-align: center;
+  .imageContainer {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .cardImage {
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+  }
+  
+  .cardImage:hover {
+    transform: scale(1.1); /* Enlarges the image by 10% */
+  }
+
+  article {
+    padding: var(--space-m);
+    background-color: #ffffff;
+
+    .cardTitle {
+      padding-bottom: var(--space-s);
+    }
+
+    .customList {
+      padding: var(--space-s) 0;
+    }
+
+    .customList li::before {
+      content: "•";
+      color: black;
+      /* font-size: 1.2em; */
+      margin-right: .5rem;
+      line-height: 1.75;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      background-color: var(--color-primary);
+      color: white;
+      border: none;
+      padding: .3rem 1rem;
+      border-radius: 2.5rem;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: var(--space-xs);
+    }
+  
+    .icon {
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+      margin-left: .5rem;
+    }
+  
+    .btn:hover {
+      background-color: var(--color-secondary);
+    }
   }
 }
 
-.btn {
-  background-color: var(--color-accent);
-  color: var(--color-text-white);
-  padding: var(--space-s);
-}
+
 
 description-block {
   padding: var(--space-l);

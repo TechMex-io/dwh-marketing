@@ -44,19 +44,45 @@ site-banner {
   padding: var(--space-m);
 }
 
-site-hero {
-  min-block-size: 80vh;
-  background-image: url("https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg");
-  background-size: cover;
-  background-position: center;
+.heroImgWrapper {
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  .heroImg {
+    min-height: 20vh;
+    max-height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, white, transparent);
+  }
+
+ .heroMaxWidth {
+    position: absolute;
+    bottom: var(--space-m);
+    left: calc(50% - 610px);
+  }
+
+  .heroText {
+    z-index: 2; /* Ensures the text is above the gradient */
+  }
+
 }
 
+
+
 main {
-  /* turned off because I need some pieces inside main to go full with of screen, can think through how to handle */
-  /* max-inline-size: 90vw; */
-  /* max-inline-size: 1300px; */
   margin-inline: auto;
-  /* padding: var(--space-l); */
 }
 
 site-description {
@@ -68,6 +94,10 @@ site-description {
 
 .grey-background {
   background-color: var(--color-accent-2);
+}
+
+.textBox {
+  margin-bottom: var(--space-l);
 }
 
 dwh-card {
@@ -84,11 +114,11 @@ dwh-card {
   }
 
   .cardImage {
-    transition: transform 0.3s ease-in-out; /* Smooth animation */
+    transition: transform 0.3s ease-in-out;
   }
 
   .cardImage:hover {
-    transform: scale(1.1); /* Enlarges the image by 10% */
+    transform: scale(1.1);
   }
 
   article {
@@ -134,6 +164,10 @@ dwh-card {
     .btn:hover {
       background-color: var(--color-secondary);
     }
+
+    ul {
+      list-style: none;
+    }
   }
 }
 
@@ -154,59 +188,109 @@ split-panel {
   }
 }
 
-/* accordian */
-details {
-  margin-bottom: var(--space-xs);
-}
-details summary {
-  display: block;
-  cursor: pointer;
-  padding: 0.5em 0.5em 0.5em 0.7em;
-  background: var(--color-tertiary);
-  font-size: var(--step-0);
-  font-weight: bold;
-  border-radius: 3px 3px 0 0;
-}
-details summary::before {
-  content: "+";
-  font-size: 20px;
-  margin-inline-end: 10px;
-  transition: transform 0.2s ease;
+/* Where we work */
+.whereWeWork {
+  padding-top: var(--space-m);
+  
+  ul {
+    list-style: none;
+  }
+} 
+
+
+/* footer */
+.footerWrapper {
+  background-color: black;
 }
 
-details[open] summary::before {
-  content: "−";
+.siteFooterCTA {
+  color: var(--color-text-white);
 }
 
-details:not([open]) summary:hover,
-details:not([open]) summary:focus {
-  background: #f6f6f6;
-  color: #454545;
+.site-footer {
+  color: var(--color-text-white);
+
+  .paddingTop {
+    padding-top: var(--space-s);
+  }
+
+  .footerHeader {
+    padding-bottom: var(--space-2xs);
+  }
+
+  article > a, a {
+    text-decoration: none;
+    color: var(--color-text-white);
+    padding-bottom: var(--space-3xs);
+    transition: padding-left 0.2s ease-in-out;
+  }
+
+  article > a::before {
+    content: " → ";
+    left: -20px;
+    opacity: 0;
+    transition: left 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+
+  article > a:hover {
+      padding-left: 20px;
+  }
+
+  article > a:hover::before {
+      left: 0px;
+      opacity: 1;
+  }
+
+  nav { --collapse-at: 600px; } 
 }
 
-details[open] summary {
-  border: 1px solid var(--color-primary);
-  background: var(--color-primary);
-  color: #ffffff;
+.siteFooterCTA {
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-xl);
 }
 
-details[open] .accordian-content {
-  padding: 1em 1em;
+.siteFooterCTA > .footerCtaButton {
+  background-color: var(--color-text-white);
+  border-radius: var(--space-m);
+  color: black;
+  padding: var(--space-xs) var(--space-s)
 }
 
-details[open] .accordian-content p:first-child {
-  font-weight: 700;
+.siteFooterCTA > .footerCtaButton:hover {
+  background-color: var(--color-secondary);
 }
 
-details[open] .accordian-content p:last-child {
-  padding-bottom: 0;
-}
-
-details[open] .accordian-content p {
-  padding-bottom: 1em;
-}
-
-/* Footer */
-.footerText > p{
+.footerText p {
   font-size: var(--step--1);
 }
+
+@media (max-width: 700px) {
+
+  .siteFooterCTA {
+    justify-content: end;
+  }
+
+  .footerCtaButton {
+    margin-top: var(--space-m);
+  }
+
+  .site-footer {
+    /* This commented out code centers stuff on mobile - didn't love it */
+    /* text-align: center; */
+    gap: var( --space-m);
+
+    /* nav > article > div {
+        justify-content: center;
+    } */
+  }
+
+}
+
+@media (max-width: 1300px) {
+  .heroImgWrapper > .heroMaxWidth {
+    left: calc(var(--space-l));
+  }
+  
+}
+
+

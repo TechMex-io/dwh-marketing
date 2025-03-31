@@ -1,21 +1,55 @@
 .services-page {
-    site-hero {
-      min-block-size: 20vh;
-      max-block-size: 40vh;
-      background-image: url("https://static.wixstatic.com/media/1f7967_b93c3e6e0bcf4db38ac84ae423284c3b~mv2.jpg/v1/fit/w_1486,h_426,q_90,enc_avif,quality_auto/1f7967_b93c3e6e0bcf4db38ac84ae423284c3b~mv2.jpg");
-    }
-  
-    [data-grid] {
-      --col-px-width: 400;
-    }
+
+  /* accordian details */
+  details {
+    margin-bottom: var(--space-xs);
+  }
+  details summary {
+    display: block;
+    cursor: pointer;
+    padding: 0.5em 0.5em 0.5em 0.7em;
+    background: var(--color-tertiary);
+    font-size: var(--step-0);
+    font-weight: bold;
+    border-radius: 3px 3px 0 0;
+  }
+  details summary::before {
+    content: "+";
+    font-size: 20px;
+    margin-inline-end: 10px;
+    transition: transform 0.2s ease;
   }
 
-  /* accordian container */
-  .accordion-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap; 
-    padding: var(--space-l) 0;
+  details[open] summary::before {
+    content: "−";
+  }
+
+  details:not([open]) summary:hover,
+  details:not([open]) summary:focus {
+    background: #f6f6f6;
+    color: #454545;
+  }
+
+  details[open] summary {
+    border: 1px solid var(--color-primary);
+    background: var(--color-primary);
+    color: #ffffff;
+  }
+
+  details[open] .accordian-content {
+    padding: 1em 1em;
+  }
+
+  details[open] .accordian-content p:first-child {
+    font-weight: 700;
+  }
+
+  details[open] .accordian-content p:last-child {
+    padding-bottom: 0;
+  }
+
+  details[open] .accordian-content p {
+    padding-bottom: 1em;
   }
 
   .first {
@@ -25,12 +59,12 @@
   .second {
     flex: 4;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     overflow: hidden;
   }
   .second img {
-    height: 100%;
+    height: 750px;
     width: 100%;
     object-fit: cover;
   }
@@ -39,32 +73,26 @@
     display: none;
   }
 
-  /* Responsive: Stack on smaller screens */
+
   @media (max-width: 992px) {
-    .accordion-container {
-      flex-direction: column;
+    .max-width split-panel {
+      flex-direction: column-reverse;
     }
-    .first, .second {
-      flex: 1; 
-    }
-    .first{
-      order: 2;
-    }
+
     .second {
       display: none;
     }
+
     .second-mobile {
       display: block;
       order: 1;
       padding-bottom: var(--space-m);
+  
+      img {
+        width: 100%;
+      }
     }
   }
 
-  .whereWeWork {
-    padding-top: var(--space-m);
-  }
 
-  /* where we work */
-  ul {
-    list-style: none;
-  }
+}

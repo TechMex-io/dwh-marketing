@@ -1,6 +1,7 @@
 @import "./home.css";
 @import "./projects.css";
 @import "./services.css";
+@import "./service-detail.css";
 /* cabin-latin-wght-normal */
 @font-face {
   font-family: "Cabin Variable";
@@ -36,7 +37,7 @@ site-description {
 
 site-banner {
   background-color: var(--color-tertiary);
-  padding: var(--space-s);
+  padding: var(--space-3xs);
   text-align: center;
 }
 
@@ -64,7 +65,7 @@ site-banner {
     left: 0;
     width: 100%;
     height: 200px;
-    background: linear-gradient(to top, white, transparent);
+    background: linear-gradient(to top, var(--color-accent-2), transparent);
   }
 
  .heroMaxWidth {
@@ -74,7 +75,7 @@ site-banner {
   }
 
   .heroText {
-    z-index: 2; /* Ensures the text is above the gradient */
+    z-index: 2;
   }
 
 }
@@ -93,11 +94,38 @@ site-description {
 }
 
 .grey-background {
-  background-color: var(--color-accent-2);
+  background-color: var(--color-tertiary);
 }
 
 .textBox {
   margin-bottom: var(--space-l);
+}
+
+description-block {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: var(--space-s)
+  }
+
+  .icon {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    margin-inline-start: 0.5rem;
+  }
+
+  .btn:hover {
+    background-color: var(--color-secondary);
+  }
+
 }
 
 dwh-card {
@@ -136,7 +164,6 @@ dwh-card {
     .customList li::before {
       content: "•";
       color: black;
-      /* font-size: 1.2em; */
       margin-inline-end: 0.5rem;
       line-height: 1.75;
     }
@@ -171,8 +198,31 @@ dwh-card {
   }
 }
 
-description-block {
-  padding: var(--space-l);
+/* marginControls */
+.marginTLarge{
+  margin-top: var(--space-l);
+}
+.marginBLarge{
+  margin-bottom: var(--space-l);
+}
+.marginBMedium{
+  margin-bottom: var(--space-m);
+}
+.marginYLarge{
+  margin: var(--space-l) 0px;
+}
+.marginXLarge{
+  margin: 0px var(--space-l) ;
+}
+.center {
+  margin: 0 auto;
+}
+.centerVert {
+  margin: auto 0;
+}
+
+.upperCase{
+  text-transform: uppercase;
 }
 
 split-panel {
@@ -275,13 +325,7 @@ split-panel {
   }
 
   .site-footer {
-    /* This commented out code centers stuff on mobile - didn't love it */
-    /* text-align: center; */
     gap: var( --space-m);
-
-    /* nav > article > div {
-        justify-content: center;
-    } */
   }
 
 }
@@ -293,4 +337,8 @@ split-panel {
   
 }
 
-
+@media (max-width: 992px) {
+  .max-width .flipCol {
+    flex-direction: column-reverse;
+  }
+}

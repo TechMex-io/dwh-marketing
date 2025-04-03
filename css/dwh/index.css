@@ -25,6 +25,11 @@ body {
   padding: var(--space-l);
 }
 
+.max-width-banner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 .max-height-hero-text {
   height: 40vh;
 }
@@ -36,9 +41,32 @@ site-description {
 }
 
 site-banner {
-  background-color: var(--color-tertiary);
-  padding: var(--space-3xs);
+  background-color: var(--color-primary);
+  padding: var(--space-2xs);
   text-align: center;
+  color: var(--color-text-white);
+  p {
+    font-size: var(--step--1);
+  }
+  p:nth-child(2){
+    margin-left: var(--space-2xs)
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-text-white);
+    border: 1px solid var(--color-text-white);
+    padding: 0 1rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: var(--space-xl);
+  }
+  .btn:hover {
+    background-color: var(--color-text-white);
+    color: var(--color-primary);
+  }
 }
 
 .site-nav {
@@ -220,7 +248,6 @@ dwh-card {
 .centerVert {
   margin: auto 0;
 }
-
 .upperCase{
   text-transform: uppercase;
 }
@@ -250,7 +277,7 @@ split-panel {
 
 /* footer */
 .footerWrapper {
-  background-color: black;
+  background-color: var(--color-primary);
 }
 
 .siteFooterCTA {
@@ -302,7 +329,7 @@ split-panel {
 .siteFooterCTA > .footerCtaButton {
   background-color: var(--color-text-white);
   border-radius: var(--space-m);
-  color: black;
+  color: var(--color-primary);
   padding: var(--space-xs) var(--space-s)
 }
 
@@ -326,6 +353,18 @@ split-panel {
 
   .site-footer {
     gap: var( --space-m);
+  }
+
+  site-banner {
+    p {
+      width: 100%;
+    }
+    p:nth-child(2){
+      margin-left: 0;
+    }
+    .btn {
+      margin: var(--space-2xs) 0;
+    }
   }
 
 }

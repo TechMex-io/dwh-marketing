@@ -4,38 +4,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/index.js" type="module"></script>
   <title>Dogwood Homes</title>
-
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/carousel/carousel.js"></script>
 </head>
 
 <body class="home-page">
+
   <site-banner class="banner">
-    <div data-cluster data-justify="center" data-align="center" class="max-width-banner">
+    <div data-cluster data-justify="center" data-align="center" class="max-width-nav">
       <p>Have a project you’ve been thinking about?</p>
       <p>Contact us for a consultation and estimate.</p>
       <a href="/" class="btn">Contact Us</a>
     </div>
   </site-banner>
 
-  <nav class="site-nav" data-cluster data-justify="center" data-align="center" data-gap="m">
-    <a href="/">Home</a>
-    <a href="/projects.html">Projects</a>
-    <a href="/">LOGO</a>
-    <a href="/services.html">Services</a>
-    <a href="/">Contact</a>
+  <nav class="site-nav max-width-nav" data-split data-split-1-4 data-gap="m" data-collapse="s" data-justify="between">
+    <a href="/">
+      <img src="./dogwood_homes-logo-ore.png" width=175 alt="Dogwood Homes Logo" class="navLink"/>
+    </a>
+    <div data-cluster data-justify="around" data-align="center" data-gap="m" class="navCluster">
+      <a href="/" class="navLink">Home</a>
+      <sl-dropdown>
+        <sl-button slot="trigger" caret><span class="upperCase">Services</span></sl-button>
+        <sl-menu>
+          <sl-menu-item><a href="/service-detail.html">Kitchen Remodel</a></sl-menu-item>
+          <sl-menu-item><a href="/service-detail.html">Bathroom Remodel</a></sl-menu-item>
+        </sl-menu>
+      </sl-dropdown>
+      <sl-dropdown>
+        <sl-button slot="trigger" caret><span class="upperCase">Portfolio</span></sl-button>
+        <sl-menu>
+          <sl-menu-item><a href="/">Bathrooms</a></sl-menu-item>
+          <sl-menu-item><a href="/">Kitchens</a></sl-menu-item>
+        </sl-menu>
+      </sl-dropdown>
+      <sl-dropdown>
+        <sl-button slot="trigger" caret><span class="upperCase">About</span></sl-button>
+        <sl-menu>
+          <sl-menu-item><a href="/team.html">About Us</a></sl-menu-item>
+          <sl-menu-item><a href="/process.html">Our Process</a></sl-menu-item>
+        </sl-menu>
+      </sl-dropdown>
+      <a href="/" class="navLink">Contact</a>
+      <a href="/" class="navLink">Client Login</a>
+    </div>
+    <!-- mobile menu - shoelace -->
+    <div data-cluster data-justify="end" data-align="center" class="mobileMenu">
+      <sl-drawer label="" class="drawer-overview" style="--size: 100vw;">
+        <div data-stack justify="between">
+          <article data-stack>
+            <a href="/">Home</a>
+            <a href="/services.html">Services</a>
+            <a href="/">Portfolio</a>
+            <a href="/">About</a>
+            <a href="/">Contact</a>
+            <a href="/">Client Login</a>
+          </article>
+          <a href="/">
+            <img src="./dogwood_homes-logo-ore.png" alt="Dogwood Homes Logo" width="150" class="navLink"/>
+          </a>
+      </div>
+      </sl-drawer>
+      <sl-button class="hamburger">
+        <svg width="32" height="32" viewBox="0 0 100 80" fill="hsl(201deg 16% 31%)">
+          <rect width="100" height="8"></rect>
+          <rect y="30" width="100" height="8"></rect>
+          <rect y="60" width="100" height="8"></rect>
+        </svg>
+     </sl-button>
+    </div>
   </nav>
-  <site-hero class="hero">Hero for home page needs work, slideer maybe</site-hero>
 
   <main>
-    <site-description class="site-description">
-      <h2>Luxury home remodeling & custom building for sophisticated homeowners</h2>
-    </site-description>
+
+  <div class="max-width">
+    <site-hero class="hero">
+      <!-- imageComparer -->
+      <!-- <sl-image-comparer class="imageComparer">
+        <img
+          slot="before"
+          width="100%"
+          src="https://photos.zillowstatic.com/fp/195719244e216011bc044e32a3b05691-uncropped_scaled_within_1536_1152.webp"
+          alt="Grayscale version of kittens in a basket looking around."
+        />
+        <img
+          slot="after"
+          width="100%"
+          src="/tylerKitchenRemodel.jpg"
+          alt="Color version of kittens in a basket looking around."
+        />
+      </sl-image-comparer> -->
+      <sl-carousel autoplay autoplay-interval="6000" loop pagination>
+        <sl-carousel-item>
+          <img
+            alt="The sun shines on the mountains and trees (by Adam Kool on Unsplash)"
+            src="https://static.wixstatic.com/media/1f7967_f994e17513b842779bbc25b4c422e035~mv2.jpg/v1/fill/w_981,h_654,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8454.jpg"
+          />
+        </sl-carousel-item>
+        <Sl-carousel-item>
+          <img
+            alt="A waterfall in the middle of a forest (by Thomas Kelly on Unsplash)"
+            src="https://static.wixstatic.com/media/1f7967_435e61862fab47b693a0c098c89f37ca~mv2.jpg/v1/fit/w_1528,h_662,q_90,enc_avif,quality_auto/1f7967_435e61862fab47b693a0c098c89f37ca~mv2.jpg"
+          />
+        </Sl-carousel-item>
+        <Sl-carousel-item>
+          <img
+            alt="A waterfall in the middle of a forest (by Thomas Kelly on Unsplash)"
+            src="https://static.wixstatic.com/media/1f7967_b19052126f5f44aeb4e075503475e469~mv2.jpg/v1/fit/w_1528,h_662,q_90,enc_avif,quality_auto/1f7967_b19052126f5f44aeb4e075503475e469~mv2.jpg"
+          />
+        </Sl-carousel-item>
+      </sl-carousel>
+    </site-hero>
+  </div>
+
+  <!-- Section - site description -->
+  <site-description class="site-description">
+    <h1>Dogwood Homes: Luxury Remodeling & Custom Renovations in Little Rock, AR</h1>
+  </site-description>
+
+
     <!-- section 6 - cards of services and links to pages -->
     <div class="grey-background">
       <section class="max-width">
-        <card-row data-flex data-columns="3" data-gap="m" data-collapse="s">
+        <h4 class="marginYLarge upperCase">Dogwood Homes Remodeling Services</h4>
+        <card-row data-flex data-columns="3" data-gap="m" data-collapse="s" class="marginBLarge">
           <dwh-card>
             <div class="image-container">
               <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
@@ -43,6 +139,7 @@
             </div>
             <article data-stack data-align="start">
               <h5 class="cardTitle">Kitchen Remodeling</h5>
+              <div><hr></div>
               <p>Transform your kitchen into a stunning, functional space with our premium remodeling services.</p>
               <ul class="customList">
                 <li>Custom cabinet design and installation</li>
@@ -57,7 +154,7 @@
                 <li>Appliance installation
                 </li>
               </ul>
-              <a href="/" class="btn">Learn More
+              <a href="/service-detail.html" class="btn">Learn More
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon">
                   <path
                     d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
@@ -72,6 +169,7 @@
             </div>
             <article data-stack data-align="start">
               <h5 class="cardTitle">Bathroom Remodeling</h5>
+              <div><hr></div>
               <p>Create a spa-like retreat with our luxury bathroom renovation services.</p>
               <ul class="customList">
                 <li>Shower and bathtub installation</li>
@@ -101,6 +199,7 @@
             </div>
             <article data-stack data-align="start">
               <h5 class="cardTitle">Basement Finishing</h5>
+              <div><hr></div>
               <p>Maximize your living space with our professional basement finishing services.</p>
               <ul class="customList">
                 <li>Framing and drywall installation</li>
@@ -125,6 +224,7 @@
             </div>
             <article data-stack data-align="start">
               <h5 class="cardTitle">Home Additions</h5>
+              <div><hr></div>
               <p>Expand your living space with our carefully planned home additions.</p>
               <ul class="customList">
                 <li>Second story additions</li>
@@ -149,6 +249,7 @@
             </div>
             <article data-stack data-align="start">
               <h5 class="cardTitle">Outdoor Living</h5>
+              <div><hr></div>
               <p>Create beautiful outdoor spaces for relaxation and entertainment.</p>
               <ul class="customList">
                 <li>Deck and patio construction</li>
@@ -173,6 +274,7 @@
             </div>
             <article data-stack data-align="start">
               <h5 class="cardTitle">Whole House Remodeling</h5>
+              <div><hr></div>
               <p>Complete transformation of your home with our comprehensive remodeling services.</p>
               <ul class="customList">
                 <li>Design and planning</li>
@@ -193,6 +295,43 @@
         </card-row>
       </section>
     </div>
+
+          <!-- section 2 - basic text -->
+          <container>
+            <div class="max-width">
+              <div data-stack data-gap="s">
+                <h4>Where We Work</h4>
+                <p>Proudly serving the heart of Central Arkansas! From the vibrant streets of Little Rock and North Little Rock to the charming community of Maumelle, we're here for you. We also bring our expertise to many of your favorite neighborhoods—because great service starts right where you are!</p>
+              </div>
+              <card-row data-row data-columns="2" data-gap="s" data-collapse="s" class="whereWeWork">
+                <dwh-card>
+                  <ul>
+                    <li>Chenal Valley</li>
+                    <li>Heights</li>
+                    <li>Hillcrest</li>
+                    <li>Cammack Village</li>
+                    <li>Pleasant Valley</li>
+                    <li>Brody Creek</li>
+                    <li>Woodlands Edge</li>
+                    
+                    
+                  </ul>
+                </dwh-card>
+                <dwh-card>
+                  <ul>
+                    <li>Otter Creek</li>
+                    <li>Walton Heights</li>
+                    <li>Lake Wood</li>
+                    <li>The Park Hill Historic District</li>
+                    <li>Maumelle</li>
+                    <li>Indian Hills</li>
+                    <li>Shady Valley </li>
+                  </ul>
+                </dwh-card>
+              </card-row>
+            </div>
+            </container>
+
   </main>
 
   <!-- sectioni 7 - full footer -->
@@ -221,7 +360,7 @@
         <article data-stack >
           <h6 class="footerHeader">Quick Links</h6>
           <a href="/">Home</a>
-          <a href="/">Services</a>
+          <a href="/services.html">Services</a>
           <a href="/">Projects</a>
           <a href="/">About Us</a>
           <a href="/">Tesitmonials</a>
@@ -248,13 +387,5 @@
     </footer>
   </section>
 
-  <main>
-  </main>
-
-
-
-
-
 </body>
-
 </html>

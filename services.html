@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/index.js" type="module"></script>
     <title>Dogwood Homes - Services</title>
@@ -20,9 +21,9 @@
       </div>
     </site-banner>
     <!-- top nav -->
-    <nav class="site-nav max-width-nav" data-split data-split-1-4 data-gap="m" data-collapse="s">
+    <nav class="site-nav max-width-nav" data-split data-split-1-4 data-gap="m" data-collapse="s" data-justify="between">
       <a href="/">
-        <img src="./dogwood_homes-logo-ore.png" alt="Dogwood Homes Logo" width="150" class="navLink"/>
+        <img src="./dogwood_homes-logo-ore.png" width=175 alt="Dogwood Homes Logo" class="navLink"/>
       </a>
       <div data-cluster data-justify="around" data-align="center" data-gap="m" class="navCluster">
         <a href="/" class="navLink">Home</a>
@@ -50,23 +51,48 @@
         <a href="/" class="navLink">Contact</a>
         <a href="/" class="navLink">Client Login</a>
       </div>
-    </nav>
-
-    <!-- section 1 - image with text -->
-    <site-hero class="hero">
-      <article class="heroImgWrapper">
-        <img class="heroImg" src="https://static.wixstatic.com/media/1f7967_b93c3e6e0bcf4db38ac84ae423284c3b~mv2.jpg/v1/fit/w_1486,h_426,q_90,enc_avif,quality_auto/1f7967_b93c3e6e0bcf4db38ac84ae423284c3b~mv2.jpg" alt="Dogwood Homes kitchen remodel countertop image">
-        <div class="gradient-overlay"></div>
-        <div class="heroMaxWidth">
-          <h2 class="heroText">Our Services</h2>
+      <!-- mobile menu - shoelace -->
+      <div data-cluster data-justify="end" data-align="center" class="mobileMenu">
+        <sl-drawer label="" class="drawer-overview" style="--size: 100vw;">
+          <div data-stack justify="between">
+            <article data-stack>
+              <a href="/">Home</a>
+              <a href="/services.html">Services</a>
+              <a href="/">Portfolio</a>
+              <a href="/team.html">Meet the Team</a>
+              <a href="/process.html">Our Process</a>
+              <a href="/">Contact</a>
+              <a href="/">Client Login</a>
+            </article>
+            <a href="/">
+              <img src="./dogwood_homes-logo-ore.png" alt="Dogwood Homes Logo" width="150" class="navLink"/>
+            </a>
         </div>
-      </article>
-
-    </site-hero>
-
+        </sl-drawer>
+        <sl-button class="hamburger">
+          <svg width="32" height="32" viewBox="0 0 100 80" fill="hsl(201deg 16% 31%)">
+            <rect width="100" height="8"></rect>
+            <rect y="30" width="100" height="8"></rect>
+            <rect y="60" width="100" height="8"></rect>
+          </svg>
+       </sl-button>
+      </div>
+    </nav>
+    
     <main>
 
-      <!-- section 8 - Main Description Block -->
+      <!-- section 1 - image with text -->
+      <site-hero class="hero">
+        <article class="heroImgWrapper">
+          <img class="heroImg" src="https://static.wixstatic.com/media/1f7967_b93c3e6e0bcf4db38ac84ae423284c3b~mv2.jpg/v1/fit/w_1486,h_426,q_90,enc_avif,quality_auto/1f7967_b93c3e6e0bcf4db38ac84ae423284c3b~mv2.jpg" alt="Dogwood Homes kitchen remodel countertop image">
+          <div class="gradient-overlay"></div>
+          <div class="heroMaxWidth">
+            <h2 class="heroText">Our Services</h2>
+          </div>
+        </article>
+      </site-hero>
+
+      <!-- section 8 - Main Description Block, heading on right -->
       <div class="max-width">
         <description-block data-split data-split-2-3 data-gap="m" data-collapse="m" class="marginYLarge flipCol">
           <div data-stack data-gap="s">
@@ -470,6 +496,5 @@
       </footer>
     </section>
     
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace.js"></script>
   </body>
 </html>

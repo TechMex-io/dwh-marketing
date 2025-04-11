@@ -83,28 +83,7 @@
 
   <div class="max-width">
     <site-hero class="hero">
-      <!-- imageComparer -->
-      <!-- <sl-image-comparer class="imageComparer">
-        <img
-          slot="before"
-          width="100%"
-          src="https://photos.zillowstatic.com/fp/195719244e216011bc044e32a3b05691-uncropped_scaled_within_1536_1152.webp"
-          alt="Grayscale version of kittens in a basket looking around."
-        />
-        <img
-          slot="after"
-          width="100%"
-          src="/tylerKitchenRemodel.jpg"
-          alt="Color version of kittens in a basket looking around."
-        />
-      </sl-image-comparer> -->
       <sl-carousel autoplay autoplay-interval="6000" loop pagination>
-        <sl-carousel-item>
-          <img
-            alt="The sun shines on the mountains and trees (by Adam Kool on Unsplash)"
-            src="https://static.wixstatic.com/media/1f7967_f994e17513b842779bbc25b4c422e035~mv2.jpg/v1/fill/w_981,h_654,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8454.jpg"
-          />
-        </sl-carousel-item>
         <Sl-carousel-item>
           <img
             alt="A waterfall in the middle of a forest (by Thomas Kelly on Unsplash)"
@@ -117,6 +96,12 @@
             src="https://static.wixstatic.com/media/1f7967_b19052126f5f44aeb4e075503475e469~mv2.jpg/v1/fit/w_1528,h_662,q_90,enc_avif,quality_auto/1f7967_b19052126f5f44aeb4e075503475e469~mv2.jpg"
           />
         </Sl-carousel-item>
+        <sl-carousel-item>
+          <img
+            alt="The sun shines on the mountains and trees (by Adam Kool on Unsplash)"
+            src="https://static.wixstatic.com/media/1f7967_f994e17513b842779bbc25b4c422e035~mv2.jpg/v1/fill/w_981,h_654,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8454.jpg"
+          />
+        </sl-carousel-item>
       </sl-carousel>
     </site-hero>
   </div>
@@ -125,6 +110,13 @@
   <site-description class="site-description">
     <h1>Dogwood Homes: Luxury Remodeling & Custom Renovations in Little Rock, AR</h1>
   </site-description>
+  <!-- basic text -->
+   <section class="max-width">
+    <div data-stack data-gap="s" class="marginBLarge">
+      <p>Dogwood Homes LLC is a reputable construction company based in Little Rock, Arkansas, specializing in a wide range of residential remodeling and renovation services. Our expertise encompasses both small and large-scale projects, including additions, interior and exterior repairs, and landscaping. Known for their commitment to customer service, design excellence, and transparency, Dogwood Homes has earned recognition for their work, notably the Baker House in North Little Rock. With a dedicated team of professionals, they focus on delivering high-quality craftsmanship and attention to detail in every project they undertake.</p>
+    </div>
+   </section>
+
 
 
     <!-- section 6 - cards of services and links to pages -->
@@ -132,14 +124,14 @@
       <section class="max-width">
         <h4 class="marginYLarge upperCase">Dogwood Homes Remodeling Services</h4>
         <card-row data-flex data-columns="3" data-gap="m" data-collapse="s" class="marginBLarge">
-          <dwh-card>
+          <dwh-card class="serviceCard">
             <div class="image-container">
               <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
                 alt="Dogwood Homes" class="cardImage">
             </div>
             <article data-stack data-align="start">
               <h5 class="cardTitle">Kitchen Remodeling</h5>
-              <div><hr></div>
+              <hr>
               <p>Transform your kitchen into a stunning, functional space with our premium remodeling services.</p>
               <ul class="customList">
                 <li>Custom cabinet design and installation</li>
@@ -169,7 +161,7 @@
             </div>
             <article data-stack data-align="start">
               <h5 class="cardTitle">Bathroom Remodeling</h5>
-              <div><hr></div>
+              <hr>
               <p>Create a spa-like retreat with our luxury bathroom renovation services.</p>
               <ul class="customList">
                 <li>Shower and bathtub installation</li>
@@ -199,7 +191,7 @@
             </div>
             <article data-stack data-align="start">
               <h5 class="cardTitle">Basement Finishing</h5>
-              <div><hr></div>
+              <hr>
               <p>Maximize your living space with our professional basement finishing services.</p>
               <ul class="customList">
                 <li>Framing and drywall installation</li>
@@ -224,7 +216,7 @@
             </div>
             <article data-stack data-align="start">
               <h5 class="cardTitle">Home Additions</h5>
-              <div><hr></div>
+              <hr>
               <p>Expand your living space with our carefully planned home additions.</p>
               <ul class="customList">
                 <li>Second story additions</li>
@@ -249,7 +241,7 @@
             </div>
             <article data-stack data-align="start">
               <h5 class="cardTitle">Outdoor Living</h5>
-              <div><hr></div>
+              <hr>
               <p>Create beautiful outdoor spaces for relaxation and entertainment.</p>
               <ul class="customList">
                 <li>Deck and patio construction</li>
@@ -274,7 +266,7 @@
             </div>
             <article data-stack data-align="start">
               <h5 class="cardTitle">Whole House Remodeling</h5>
-              <div><hr></div>
+              <hr>
               <p>Complete transformation of your home with our comprehensive remodeling services.</p>
               <ul class="customList">
                 <li>Design and planning</li>

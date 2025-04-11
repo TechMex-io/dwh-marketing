@@ -20,37 +20,62 @@
         </div>
       </site-banner>
     <!-- Nav -->
-	<nav class="site-nav max-width-nav" data-split data-split-1-4 data-gap="m" data-collapse="s">
-		<a href="/">
-		  <img src="./dogwood_homes-logo-ore.png" alt="Dogwood Homes Logo" width="150" class="navLink"/>
-		</a>
-		<div data-cluster data-justify="around" data-align="center" data-gap="m" class="navCluster">
-		  <a href="/" class="navLink">Home</a>
-		  <sl-dropdown>
-			<sl-button slot="trigger" caret><span class="upperCase">Services</span></sl-button>
-			<sl-menu>
-			  <sl-menu-item><a href="/service-detail.html">Kitchen Remodel</a></sl-menu-item>
-			  <sl-menu-item><a href="/service-detail.html">Bathroom Remodel</a></sl-menu-item>
-			</sl-menu>
-		  </sl-dropdown>
-		  <sl-dropdown>
-			<sl-button slot="trigger" caret><span class="upperCase">Portfolio</span></sl-button>
-			<sl-menu>
-			  <sl-menu-item><a href="/">Bathrooms</a></sl-menu-item>
-			  <sl-menu-item><a href="/">Kitchens</a></sl-menu-item>
-			</sl-menu>
-		  </sl-dropdown>
-		  <sl-dropdown>
-			<sl-button slot="trigger" caret><span class="upperCase">About</span></sl-button>
-			<sl-menu>
-			  <sl-menu-item><a href="/team.html">About Us</a></sl-menu-item>
-			  <sl-menu-item><a href="/process.html">Our Process</a></sl-menu-item>
-			</sl-menu>
-		  </sl-dropdown>
-		  <a href="/" class="navLink">Contact</a>
-		  <a href="/" class="navLink">Client Login</a>
-		</div>
-	  </nav>
+		<nav class="site-nav max-width-nav" data-split data-split-1-4 data-gap="m" data-collapse="s" data-justify="between">
+			<a href="/">
+				<img src="./dogwood_homes-logo-ore.png" width=175 alt="Dogwood Homes Logo" class="navLink"/>
+			</a>
+			<div data-cluster data-justify="around" data-align="center" data-gap="m" class="navCluster">
+				<a href="/" class="navLink">Home</a>
+				<sl-dropdown>
+					<sl-button slot="trigger" caret><span class="upperCase">Services</span></sl-button>
+					<sl-menu>
+						<sl-menu-item><a href="/service-detail.html">Kitchen Remodel</a></sl-menu-item>
+						<sl-menu-item><a href="/service-detail.html">Bathroom Remodel</a></sl-menu-item>
+					</sl-menu>
+				</sl-dropdown>
+				<sl-dropdown>
+					<sl-button slot="trigger" caret><span class="upperCase">Portfolio</span></sl-button>
+					<sl-menu>
+						<sl-menu-item><a href="/projects.html">Bathrooms</a></sl-menu-item>
+					</sl-menu>
+				</sl-dropdown>
+				<sl-dropdown>
+					<sl-button slot="trigger" caret><span class="upperCase">About</span></sl-button>
+					<sl-menu>
+						<sl-menu-item><a href="/team.html">About Us</a></sl-menu-item>
+						<sl-menu-item><a href="/process.html">Our Process</a></sl-menu-item>
+					</sl-menu>
+				</sl-dropdown>
+				<a href="/" class="navLink">Contact</a>
+				<a href="/" class="navLink">Client Login</a>
+			</div>
+			<!-- mobile menu - shoelace -->
+			<div data-cluster data-justify="end" data-align="center" class="mobileMenu">
+				<sl-drawer label="" class="drawer-overview" style="--size: 100vw;">
+					<div data-stack justify="between">
+						<article data-stack>
+							<a href="/">Home</a>
+							<a href="/services.html">Services</a>
+							<a href="/">Portfolio</a>
+							<a href="/team.html">Meet the Team</a>
+							<a href="/process.html">Our Process</a>
+							<a href="/">Contact</a>
+							<a href="/">Client Login</a>
+						</article>
+						<a href="/">
+							<img src="./dogwood_homes-logo-ore.png" alt="Dogwood Homes Logo" width="150" class="navLink"/>
+						</a>
+				</div>
+				</sl-drawer>
+				<sl-button class="hamburger">
+					<svg width="32" height="32" viewBox="0 0 100 80" fill="hsl(201deg 16% 31%)">
+						<rect width="100" height="8"></rect>
+						<rect y="30" width="100" height="8"></rect>
+						<rect y="60" width="100" height="8"></rect>
+					</svg>
+			 </sl-button>
+			</div>
+		</nav>
 
     <!-- section 1 - image with text -->
     <site-hero class="hero">
@@ -81,6 +106,7 @@
                     <h4>Little Rock's Premier Kitchen Remodeling Contractor</h4>
                 </div>
             </description-block>
+
         </div>
         
 
@@ -119,7 +145,7 @@
 										<p>As the premier kitchen remodeling contractor in Little Rock, we tailor each design to suit your unique lifestyle, making your kitchen a space everyone in the home can enjoy.</p>
 
 										<span>
-												<a href="/" class="btn">See Our Work
+												<a href="/projects.html" class="btn">See Our Work
 														<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon">
 																<path
 																d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
@@ -138,38 +164,38 @@
 					<section class="max-width">
 							<h4 class="marginYLarge upperCase">Top kitchen remodels homeowners request most</h4>
 							<card-row data-flex data-columns="3" data-gap="m" data-collapse="s" class="marginBLarge">
-									<dwh-card>
-									<article data-stack data-align="start">
-											<h5 class="cardTitle">Custom Cabinetry</h5>
-											<div><hr></div>
-											<p>Built-to-order cabinets that maximize your storage while complementing your kitchen's aesthetic.</p>
-											<ul class="customList">
-													<li>Solid wood construction</li>
-													<li>Custom finishes
-													</li>
-													<li>Soft-close hardware
-													</li>
-											</ul>
-									</article>
+									<dwh-card class="detailCard">
+										<article data-stack data-align="start">
+												<h5 class="cardTitle">Custom Cabinetry</h5>
+												<hr>
+												<p>Built-to-order cabinets that maximize your storage while complementing your kitchen's aesthetic.</p>
+												<ul class="customList">
+														<li>Solid wood construction</li>
+														<li>Custom finishes
+														</li>
+														<li>Soft-close hardware
+														</li>
+												</ul>
+										</article>
 									</dwh-card>
-									<dwh-card>
-									<article data-stack data-align="start">
-									<h5 class="cardTitle">Countertop Installation</h5>
-									<div><hr></div>
-									<p>Premium surfaces from granite and quartz to marble and sustainable options.</p>
-									<ul class="customList">
-											<li>Heat resistant</li>
-											<li>Stain resistant
-											</li>
-											<li>Long-lasting durability
-											</li>
-									</ul>
-									</article>
+									<dwh-card class="detailCard">
+										<article data-stack data-align="start">
+										<h5 class="cardTitle">Countertop Installation</h5>
+										<hr>
+										<p>Premium surfaces from granite and quartz to marble and sustainable options.</p>
+										<ul class="customList">
+												<li>Heat resistant</li>
+												<li>Stain resistant
+												</li>
+												<li>Long-lasting durability
+												</li>
+										</ul>
+										</article>
 									</dwh-card>
-									<dwh-card>
+									<dwh-card class="detailCard">
 									<article data-stack data-align="start">
 									<h5 class="cardTitle">Kitchen Islands</h5>
-									<div><hr></div>
+									<hr>
 									<p>Multifunctional kitchen islands serve as a stunning centerpiece, enhancing storage and usability efficiently.</p>
 									<ul class="customList">
 											<li>Added workspace</li>
@@ -180,10 +206,10 @@
 									</ul>
 									</article>
 									</dwh-card>
-									<dwh-card>
+									<dwh-card class="detailCard">
 									<article data-stack data-align="start">
 									<h5 class="cardTitle">Backsplash Design</h5>
-									<div><hr></div>
+									<hr>
 									<p>Distinctive backsplash solutions that protect your walls and express your style.</p>
 									<ul class="customList">
 											<li>Custom patterns
@@ -195,10 +221,10 @@
 									</ul>
 									</article>
 									</dwh-card>
-									<dwh-card>
+									<dwh-card class="detailCard">
 									<article data-stack data-align="start">
 									<h5 class="cardTitle">Lighting Fixtures</h5>
-									<div><hr></div>
+									<hr>
 									<p>Strategic lighting designed to illuminate work areas while enhancing ambiance beautifully.</p>
 									<ul class="customList">
 											<li>Energy efficient</li>
@@ -207,10 +233,10 @@
 									</ul>
 									</article>
 									</dwh-card>
-									<dwh-card>
+									<dwh-card class="detailCard">
 									<article data-stack data-align="start">
 									<h5 class="cardTitle">Flooring Solutions</h5>
-									<div><hr></div>
+									<hr>
 									<p>Durable and beautiful flooring options designed to withstand heavy kitchen traffic daily.                   </p>
 									<ul class="customList">
 											<li>Water resistant</li>

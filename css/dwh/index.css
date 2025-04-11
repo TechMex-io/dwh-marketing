@@ -212,9 +212,10 @@ description-block {
 
 }
 
+
+
 dwh-card {
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   overflow: hidden;
   border-radius: 1rem;
@@ -279,14 +280,17 @@ dwh-card {
     ul {
       list-style: none;
     }
-    div {
-      width: 100%;
-    }
     hr {
       border: 1px solid var(--color-text);
-      margin-bottom: var(--space-xs)
+      margin-bottom: var(--space-xs);
+      width: 100%;
     }
   }
+}
+
+dwh-card.detailCard {
+  grid-template-columns: 1fr;
+  grid-template-rows: none;
 }
 
 /* marginControls */
@@ -305,8 +309,14 @@ dwh-card {
 .marginXLarge{
   margin: 0px var(--space-l) ;
 }
+.marginYXL{
+  margin: var(--space-xl) 0px;
+}
 .marginTXL{
   margin-top: var(--space-xl)
+}
+.marginBXL{
+  margin-bottom: var(--space-xl)
 }
 .padding2XL {
   padding: var(--space-2xl) var(--space-2xl);

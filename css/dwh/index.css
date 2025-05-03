@@ -2,6 +2,8 @@
 @import "./projects.css";
 @import "./services.css";
 @import "./service-detail.css";
+@import "./feature-galleries.css";
+
 /* cabin-latin-wght-normal */
 @font-face {
   font-family: "Cabin Variable";
@@ -22,7 +24,7 @@ body {
 .max-width {
   max-width: var(--space-max);
   margin: 0 auto;
-  padding: var(--space-l);
+  padding: var(--space-m);
 }
 
 .max-width-nav {
@@ -99,7 +101,6 @@ site-banner {
   /* shoelace styles in top nav */
   .imageComparer {
     width: 100%;
-    /* max-width: 1300px; */
     height: auto; 
   }
   sl-button::part(base) {
@@ -224,6 +225,9 @@ dwh-card {
     position: relative;
     overflow: hidden;
     display: inline-block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   .cardImage {
@@ -480,6 +484,10 @@ split-panel {
   }
 
   @media (max-width: 992px) {
+
+    .max-width.carousel {
+      padding: var(--space-m) 0;
+    }
     .max-width split-panel {
       flex-direction: column-reverse;
     }

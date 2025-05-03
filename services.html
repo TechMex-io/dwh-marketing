@@ -1,382 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/index.js" type="module"></script>
-  <title>Dogwood Homes</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js" type="module"></script>
+    <title>Dogwood Homes - Services</title>
+  </head>
 
-</head>
-
-<body class="services-page">
-  <site-banner class="banner">
-    <p>some message goes here</p>
-  </site-banner>
-  <nav class="site-nav" data-cluster data-justify="center" data-align="center" data-gap="m">
-    <a href="/">Home</a>
-    <a href="/projects.html">Projects</a>
-    <a href="/">LOGO</a>
-    <a href="/services.html">Services</a>
-    <a href="/">Contact</a>
-  </nav>
-  <!-- section 1 - image with text -->
-  <site-hero class="hero">
-    <article class="heroImgWrapper">
-      <img class="heroImg" src="https://static.wixstatic.com/media/1f7967_b93c3e6e0bcf4db38ac84ae423284c3b~mv2.jpg/v1/fit/w_1486,h_426,q_90,enc_avif,quality_auto/1f7967_b93c3e6e0bcf4db38ac84ae423284c3b~mv2.jpg" alt="Dogwood Homes kitchen remodel countertop image">
-      <div class="gradient-overlay"></div>
-      <div class="heroMaxWidth">
-        <h2 class="heroText">Our Services</h2>
+  <body class="services-page">
+    <!-- alert banner -->
+    <site-banner class="banner">
+      <div data-cluster data-justify="center" data-align="center" class="max-width-nav">
+        <p>Have a project you’ve been thinking about?</p>
+        <p>Contact us for a consultation and estimate.</p>
+        <a href="/" class="btn">Contact Us</a>
       </div>
-    </article>
-
-  </site-hero>
-
-
-  <div class="max-width">
-    <!-- section 2 - basic text -->
-    <div data-stack data-gap="s">
-      <h3>Quality Building & Remodeling in the Little Rock area</h3>
-      <p>When you work with Dogwood Homes, we offer you the luxury of choosing the design method that works best for
-        you. We provide a complete range of services for every type of home remodeling project</p>
-    </div>
-  </div>
-
-  <!-- section 3 - Banner defining next section -->
-  <site-banner class="banner">
-    <p>Dogwood Homes Remodeling Process</p>
-  </site-banner>
-
-  <main>
-    <div class="max-width">
-      <!-- section 4 - text box -->
-      <div data-container="width:sm" class="textBox">
-        <p>Dogwood Homes makes remodeling your home easy and enjoyable with our six-step remodeling process. This
-          process allows us to deliver the results you want, on time, on budget, and without the stress and headaches
-          many homeowners face when they remodel. Our remodeling process helps us make sure your project runs smoothly.
-          Click on the “+” signs below to learn about each step.</p>
+    </site-banner>
+    <!-- top nav -->
+    <nav class="site-nav max-width-nav" data-split data-split-1-4 data-gap="m" data-collapse="s" data-justify="between">
+      <a href="/">
+        <img src="./dogwood_homes-logo-ore.png" width=175 alt="Dogwood Homes Logo" class="navLink"/>
+      </a>
+      <div data-cluster data-justify="around" data-align="center" data-gap="m" class="navCluster">
+        <a href="/" class="navLink">Home</a>
+        <sl-dropdown>
+          <sl-button slot="trigger" caret><span class="upperCase">Services</span></sl-button>
+          <sl-menu>
+            <sl-menu-item><a href="/service-detail.html">Kitchen Remodel</a></sl-menu-item>
+            <sl-menu-item><a href="/service-detail.html">Bathroom Remodel</a></sl-menu-item>
+          </sl-menu>
+        </sl-dropdown>
+        <sl-dropdown>
+          <sl-button slot="trigger" caret><span class="upperCase">Portfolio</span></sl-button>
+          <sl-menu>
+            <sl-menu-item><a href="/projects.html">Bathrooms</a></sl-menu-item>
+          </sl-menu>
+        </sl-dropdown>
+        <sl-dropdown>
+          <sl-button slot="trigger" caret><span class="upperCase">About</span></sl-button>
+          <sl-menu>
+            <sl-menu-item><a href="/team.html">About Us</a></sl-menu-item>
+            <sl-menu-item><a href="/process.html">Our Process</a></sl-menu-item>
+          </sl-menu>
+        </sl-dropdown>
+        <a href="/" class="navLink">Contact</a>
+        <a href="/" class="navLink">Client Login</a>
       </div>
-      <!-- section 5 - container with accordian and image -->
-      <split-panel data-split data-split-2-3 gap="m" collapse="m">
-        <div class="first column">
-          <details open>
-            <summary>Step 1: Meet and Discuss</summary>
-            <div class="accordian-content">
-              <p>Our process begins with a meeting to discuss your project.</p>
-              <p>We will meet you onsite, look at the proposed work site, and take initial measurements. During this
-                initial phase, we will learn about your priorities and preferences, including why you are remodeling as
-                well as your wants, needs, and desires. Your existing home may have some unique opportunities or
-                challenges, which we would like to learn about as well. Along the way, we listen very carefully to what
-                you are telling us.</p>
-              <p>At this time, we will discuss an approximate amount you want to invest in the project and help to set a
-                tentative budget for the entire project. We will discuss and address any questions you may have about
-                your project, the process, and our company. If you would like to proceed to the next step, we agree to a
-                set budget to develop design ideas and agree on an initial deposit amount.</p>
-            </div>
-          </details>
-          <details>
-            <summary>Step 2: Develop Initial Ideas, Plans, and Estimates</summary>
-            <div class="accordian-content">
-              <p>The next step is to begin working on a design.</p>
-              <p>After your deposit is finalized, our designers take the time needed to understand how you plan to use
-                your space. For example, if you are undertaking a kitchen renovation, our designers need to understand
-                how you plan to use your kitchen, who will be in the kitchen, how many cooks are working together,
-                whether they are left-handed or right-handed, and so on. In fact, we have a packet of information and a
-                questionnaire that you can fill out as your “homework,” ensuring that we design a dream kitchen that
-                truly fits your needs.</p>
-              <p>As part of the design phase, we create estimates of what the ideas and options will likely cost. These
-                initial cost estimates will use placeholders called “allowances” for products, materials, and finishes
-                you will eventually need to select, which can impact the cost of the project, sometimes significantly.
-              </p>
-              <p>However, unlike some remodelers who use low-ball the allowances, we will use more realistic allowances
-                based on the information you provided in our first meeting. So, if you want a luxury kitchen, the
-                allowances used will be higher than if you are looking for a basic kitchen. This will help you make more
-                informed decisions, based on more realistic cost information, about how to proceed with the subsequent
-                design work and construction. Please click on A Note About Our Process to learn more.</p>
-            </div>
-          </details>
-          <details>
-            <summary>Step 3: Meet to Review and Select</summary>
-            <div class="accordian-content">
-              <p>We meet again.</p>
-              <p>
-                We meet again to go over the initial ideas, plans, and estimates. We will discuss the options and you
-                can decide which ideas and plan options you would like to move forward with refining further.</p>
-            </div>
-          </details>
-          <details>
-            <summary>Step 4: Refine Plans and Costs, Meet and Agree</summary>
-            <div class="accordian-content">
-              <p>We now develop and refine the ideas and plans you selected in Step 3.</p>
-              <p>
-                At this point, we refine the cost estimates and create a list of product and finish selections. We meet
-                again and present everything to you for your review and discussion. If you have any questions, we
-                address them. Once you have all the information you need, you'll decide whether to proceed or not. Upon
-                your approval to proceed, we prepare a construction agreement.</p>
-            </div>
-          </details>
-          <details>
-            <summary>Step 5: Construction</summary>
-            <div class="accordian-content">
-              <p>We begin the construction phase of the project.</p>
-              <p>
-                We start by finalizing and submitting plans for permits. Next, we schedule the project and have
-                pre-construction meetings with our team. You complete making any product and finish selections not
-                already made.
-              </p>
-              <p>
-                We meet with you and go over the details of how the construction phase will flow and you get to meet
-                with some of the team that will be working on your project. We address any questions or concerns you may
-                have before beginning construction.
-              </p>
-            </div>
-          </details>
-          <details>
-            <summary>Step 6: Post-Project Survey</summary>
-            <div class="accordian-content">
-              <p>Your feedback is vital.</p>
-              <p>
-                While we are constantly communicating with you during the project, at the end of every project we ask
-                you to complete an online survey performed by GuildQuality (GQ), an independent third party. GQ is the
-                leading homeowner satisfaction company in our industry. They will ask you to rate us in key areas known
-                to be important to homeowners. They then provide us with unbiased and unfiltered feedback so we know how
-                well our clients think we are doing.
-              </p>
-              <p>
-                This critical feedback allows us to improve our services and process when and where needed. This
-                feedback and improvement cycle is one of the many ways that help us set ourselves apart from the
-                competition.
-              </p>
-            </div>
-          </details>
-          <details>
-            <summary>A Note About Our Process</summary>
-            <div class="accordian-content">
-              <p>To help assure our cost estimates are as accurate as possible, we use allowances based on the
-                preferences and priorities we discussed in Step 2.</p>
-              <p>In Step 4, unless you have made all of the needed product, material, and finish selections, the cost
-                estimates we prepare will have “allowances” for the selections you will make later. As you can imagine,
-                there is a wide range of costs among different types and qualities of products, materials, and finishes.
-              </p>
-              <p>Why do we do this? Knowing most people are conditioned to go with lower-priced proposals, some
-                contractors use allowances that are below what will cover the cost of the products, materials and finish
-                selections you are likely to pick. In this way, those contractors hope to get homeowners to sign on the
-                dotted line. But when those homeowners start making selections, their actual project costs can
-                skyrocket.</p>
-            </div>
-          </details>
+      <!-- mobile menu - shoelace -->
+      <div data-cluster data-justify="end" data-align="center" class="mobileMenu">
+        <sl-drawer label="" class="drawer-overview" style="--size: 100vw;">
+          <div data-stack justify="between">
+            <article data-stack>
+              <a href="/">Home</a>
+              <a href="/services.html">Services</a>
+              <a href="/">Portfolio</a>
+              <a href="/team.html">Meet the Team</a>
+              <a href="/process.html">Our Process</a>
+              <a href="/">Contact</a>
+              <a href="/">Client Login</a>
+            </article>
+            <a href="/">
+              <img src="./dogwood_homes-logo-ore.png" alt="Dogwood Homes Logo" width="150" class="navLink"/>
+            </a>
         </div>
-        <figure class="second column">
-          <img
-            src="https://static.wixstatic.com/media/1f7967_0bb9d4d7ab444069b94b065fedef1f19~mv2.jpg/v1/fit/w_1667,h_651,q_90,enc_avif,quality_auto/1f7967_0bb9d4d7ab444069b94b065fedef1f19~mv2.jpg"
-            alt="">
-        </figure>
-        <figure class="second-mobile column">
-          <img
-            src="https://static.wixstatic.com/media/1f7967_106e5a0c146b4f3eb7e126d1c06c764d~mv2.jpg/v1/fill/w_890,h_553,q_90,enc_avif,quality_auto/1f7967_106e5a0c146b4f3eb7e126d1c06c764d~mv2.jpg"
-            alt="">
-        </figure>
-      </split-panel>
-    </div>
- 
-    <!-- section 6 - cards of services and links to pages -->
-    <div class="grey-background">
-      <section class="max-width">
-        <card-row data-flex data-columns="3" data-gap="m" data-collapse="s">
-          <dwh-card>
-            <div class="image-container">
-              <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
-                alt="Dogwood Homes" class="cardImage">
-            </div>
-            <article data-stack data-align="start">
-              <h5 class="cardTitle">Kitchen Remodeling</h5>
-              <p>Transform your kitchen into a stunning, functional space with our premium remodeling services.</p>
-              <ul class="customList">
-                <li>Custom cabinet design and installation</li>
-                <li>Countertop replacement and upgrades
-                </li>
-                <li>Lighting design and installation
-                </li>
-                <li>Flooring replacement
-                </li>
-                <li>Backsplash installation
-                </li>
-                <li>Appliance installation
-                </li>
-              </ul>
-              <a href="/" class="btn">Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon">
-                  <path
-                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                </svg>
-              </a>
-            </article>
-          </dwh-card>
-          <dwh-card>
-            <div class="imageContainer">
-              <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
-                alt="Dogwood Homes" class="cardImage">
-            </div>
-            <article data-stack data-align="start">
-              <h5 class="cardTitle">Bathroom Remodeling</h5>
-              <p>Create a spa-like retreat with our luxury bathroom renovation services.</p>
-              <ul class="customList">
-                <li>Shower and bathtub installation</li>
-                <li>Vanity replacement and upgrades</li>
-                <li>Toilet installation
-                </li>
-                <li>Tile installation
-                </li>
-                <li>Lighting upgrades
-                </li>
-                <li>Accessibility modifications
-                </li>
-              </ul>
-              <a href="/" class="btn">Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon">
-                  <path
-                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                </svg>
-              </a>
-            </article>
+        </sl-drawer>
+        <sl-button class="hamburger">
+          <svg width="32" height="32" viewBox="0 0 100 80" fill="hsl(201deg 16% 31%)">
+            <rect width="100" height="8"></rect>
+            <rect y="30" width="100" height="8"></rect>
+            <rect y="60" width="100" height="8"></rect>
+          </svg>
+       </sl-button>
+      </div>
+    </nav>
+    
+    <main>
 
+      <!-- section 1 - image with text -->
+      <site-hero class="hero">
+        <article class="heroImgWrapper">
+          <img class="heroImg" src="https://static.wixstatic.com/media/1f7967_b93c3e6e0bcf4db38ac84ae423284c3b~mv2.jpg" alt="Dogwood Homes kitchen remodel countertop image">
+          <div class="gradient-overlay"></div>
+          <div class="heroMaxWidth">
+            <h1 class="heroText">Our Services</h2>
+          </div>
+        </article>
+      </site-hero>
+
+      <!-- section 8 - Main Description Block, heading on right -->
+      <div class="max-width">
+        <description-block data-split data-split-2-3 data-gap="m" data-collapse="m" class="marginYLarge flipCol">
+          <div data-stack data-gap="s">
+            <p>When you work with Dogwood Homes, we offer you the luxury of choosing the design method that works best for you. We provide a complete range of services for every type of home remodeling project</p>
+          </div>
+
+          <div class="centerVert">
+              <h4>Quality Remodeling in the Little Rock area</h4>
+          </div>
+        </description-block>
+      </div>
+
+      <!-- section 6 - cards of services and links to pages -->
+      <div class="grey-background">
+        <section class="max-width">
+          <h4 class="marginYLarge upperCase">Dogwood Homes Remodeling Services</h4>
+          <card-row data-flex data-columns="3" data-gap="m" data-collapse="s" class="marginBLarge">
+            <dwh-card>
+              <div class="image-container">
+                <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
+                  alt="Dogwood Homes" class="cardImage">
+              </div>
+              <article data-stack data-align="start">
+                <h5 class="cardTitle">Kitchen Remodeling</h5>
+                <div><hr></div>
+                <p>Transform your kitchen into a stunning, functional space with our premium remodeling services.</p>
+                <ul class="customList">
+                  <li>Custom cabinet design and installation</li>
+                  <li>Countertop replacement and upgrades
+                  </li>
+                  <li>Lighting design and installation
+                  </li>
+                  <li>Flooring replacement
+                  </li>
+                  <li>Backsplash installation
+                  </li>
+                  <li>Appliance installation
+                  </li>
+                </ul>
+                <a href="/service-detail.html" class="btn">Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon">
+                    <path
+                      d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                  </svg>
+                </a>
+              </article>
+            </dwh-card>
+            <dwh-card>
+              <div class="image-container">
+                <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
+                  alt="Dogwood Homes" class="cardImage">
+              </div>
+              <article data-stack data-align="start">
+                <h5 class="cardTitle">Bathroom Remodeling</h5>
+                <div><hr></div>
+                <p>Create a spa-like retreat with our luxury bathroom renovation services.</p>
+                <ul class="customList">
+                  <li>Shower and bathtub installation</li>
+                  <li>Vanity replacement and upgrades</li>
+                  <li>Toilet installation
+                  </li>
+                  <li>Tile installation
+                  </li>
+                  <li>Lighting upgrades
+                  </li>
+                  <li>Accessibility modifications
+                  </li>
+                </ul>
+                <a href="/" class="btn">Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon">
+                    <path
+                      d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                  </svg>
+                </a>
+              </article>
+
+            </dwh-card>
+            <dwh-card>
+              <div class="image-container">
+                <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
+                  alt="Dogwood Homes" class="cardImage">
+              </div>
+              <article data-stack data-align="start">
+                <h5 class="cardTitle">Basement Finishing</h5>
+                <div><hr></div>
+                <p>Maximize your living space with our professional basement finishing services.</p>
+                <ul class="customList">
+                  <li>Framing and drywall installation</li>
+                  <li>Electrical wiring and lighting</li>
+                  <li>Plumbing installation</li>
+                  <li>Flooring installation</li>
+                  <li>Home theater setup</li>
+                  <li>Wet bar installation</li>
+                </ul>
+                <a href="/" class="btn">Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon">
+                    <path
+                      d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                  </svg>
+                </a>
+              </article>
+            </dwh-card>
+            <dwh-card>
+              <div class="image-container">
+                <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
+                  alt="Dogwood Homes" class="cardImage">
+              </div>
+              <article data-stack data-align="start">
+                <h5 class="cardTitle">Home Additions</h5>
+                <div><hr></div>
+                <p>Expand your living space with our carefully planned home additions.</p>
+                <ul class="customList">
+                  <li>Second story additions</li>
+                  <li>Room extensions</li>
+                  <li>Sunroom additions</li>
+                  <li>Garage conversions</li>
+                  <li>Structural modifications</li>
+                  <li>Permit acquisition</li>
+                </ul>
+                <a href="/" class="btn">Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon">
+                    <path
+                      d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                  </svg>
+                </a>
+              </article>
+            </dwh-card>
+            <dwh-card>
+              <div class="image-container">
+                <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
+                  alt="Dogwood Homes" class="cardImage">
+              </div>
+              <article data-stack data-align="start">
+                <h5 class="cardTitle">Outdoor Living</h5>
+                <div><hr></div>
+                <p>Create beautiful outdoor spaces for relaxation and entertainment.</p>
+                <ul class="customList">
+                  <li>Deck and patio construction</li>
+                  <li>Outdoor kitchen installation</li>
+                  <li>Fire pit and fireplace construction</li>
+                  <li>Pergola and gazebo installation</li>
+                  <li>Landscaping design</li>
+                  <li>Outdoor lighting installation</li>
+                </ul>
+                <a href="/" class="btn">Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon">
+                    <path
+                      d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                  </svg>
+                </a>
+              </article>
+            </dwh-card>
+            <dwh-card>
+              <div class="image-container">
+                <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
+                  alt="Dogwood Homes" class="cardImage">
+              </div>
+              <article data-stack data-align="start">
+                <h5 class="cardTitle">Whole House Remodeling</h5>
+                <div><hr></div>
+                <p>Complete transformation of your home with our comprehensive remodeling services.</p>
+                <ul class="customList">
+                  <li>Design and planning</li>
+                  <li>Interior and exterior renovation</li>
+                  <li>Structural modifications</li>
+                  <li>Electrical and plumbing upgrades</li>
+                  <li>Flooring and painting</li>
+                  <li>Kitchen and bathroom remodeling</li>
+                </ul>
+                <a href="/" class="btn">Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon">
+                    <path
+                      d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                  </svg>
+                </a>
+              </article>
+            </dwh-card>
+          </card-row>
+        </section>
+      </div>
+
+      <div class="max-width">
+        <!-- section 2 - basic text stack wtih h4 title -->
+        <div data-stack data-gap="s" class="marginBLarge">
+          <h4>Remodeling Process</h4>
+          <p>Dogwood Homes makes remodeling your home easy and enjoyable with our six-step remodeling process. This
+            process allows us to deliver the results you want, on time, on budget, and without the stress and headaches
+            many homeowners face when they remodel. Our remodeling process helps us make sure your project runs smoothly.
+            Click on the “+” signs below to learn about each step.</p>
+        </div>
+        <!-- section 5 - container with accordian and image -->
+        <split-panel data-split data-split-2-3 gap="m" collapse="m">
+          <div class="first column">
+            <details open>
+              <summary>Step 1: Meet and Discuss</summary>
+              <div class="accordian-content">
+                <p>Our process begins with a meeting to discuss your project.</p>
+                <p>We will meet you onsite, look at the proposed work site, and take initial measurements. During this
+                  initial phase, we will learn about your priorities and preferences, including why you are remodeling as
+                  well as your wants, needs, and desires. Your existing home may have some unique opportunities or
+                  challenges, which we would like to learn about as well. Along the way, we listen very carefully to what
+                  you are telling us.</p>
+                <p>At this time, we will discuss an approximate amount you want to invest in the project and help to set a
+                  tentative budget for the entire project. We will discuss and address any questions you may have about
+                  your project, the process, and our company. If you would like to proceed to the next step, we agree to a
+                  set budget to develop design ideas and agree on an initial deposit amount.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Step 2: Develop Initial Ideas, Plans, and Estimates</summary>
+              <div class="accordian-content">
+                <p>The next step is to begin working on a design.</p>
+                <p>After your deposit is finalized, our designers take the time needed to understand how you plan to use
+                  your space. For example, if you are undertaking a kitchen renovation, our designers need to understand
+                  how you plan to use your kitchen, who will be in the kitchen, how many cooks are working together,
+                  whether they are left-handed or right-handed, and so on. In fact, we have a packet of information and a
+                  questionnaire that you can fill out as your “homework,” ensuring that we design a dream kitchen that
+                  truly fits your needs.</p>
+                <p>As part of the design phase, we create estimates of what the ideas and options will likely cost. These
+                  initial cost estimates will use placeholders called “allowances” for products, materials, and finishes
+                  you will eventually need to select, which can impact the cost of the project, sometimes significantly.
+                </p>
+                <p>However, unlike some remodelers who use low-ball the allowances, we will use more realistic allowances
+                  based on the information you provided in our first meeting. So, if you want a luxury kitchen, the
+                  allowances used will be higher than if you are looking for a basic kitchen. This will help you make more
+                  informed decisions, based on more realistic cost information, about how to proceed with the subsequent
+                  design work and construction. Please click on A Note About Our Process to learn more.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Step 3: Meet to Review and Select</summary>
+              <div class="accordian-content">
+                <p>We meet again.</p>
+                <p>
+                  We meet again to go over the initial ideas, plans, and estimates. We will discuss the options and you
+                  can decide which ideas and plan options you would like to move forward with refining further.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Step 4: Refine Plans and Costs, Meet and Agree</summary>
+              <div class="accordian-content">
+                <p>We now develop and refine the ideas and plans you selected in Step 3.</p>
+                <p>
+                  At this point, we refine the cost estimates and create a list of product and finish selections. We meet
+                  again and present everything to you for your review and discussion. If you have any questions, we
+                  address them. Once you have all the information you need, you'll decide whether to proceed or not. Upon
+                  your approval to proceed, we prepare a construction agreement.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Step 5: Construction</summary>
+              <div class="accordian-content">
+                <p>We begin the construction phase of the project.</p>
+                <p>
+                  We start by finalizing and submitting plans for permits. Next, we schedule the project and have
+                  pre-construction meetings with our team. You complete making any product and finish selections not
+                  already made.
+                </p>
+                <p>
+                  We meet with you and go over the details of how the construction phase will flow and you get to meet
+                  with some of the team that will be working on your project. We address any questions or concerns you may
+                  have before beginning construction.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Step 6: Post-Project Survey</summary>
+              <div class="accordian-content">
+                <p>Your feedback is vital.</p>
+                <p>
+                  While we are constantly communicating with you during the project, at the end of every project we ask
+                  you to complete an online survey performed by GuildQuality (GQ), an independent third party. GQ is the
+                  leading homeowner satisfaction company in our industry. They will ask you to rate us in key areas known
+                  to be important to homeowners. They then provide us with unbiased and unfiltered feedback so we know how
+                  well our clients think we are doing.
+                </p>
+                <p>
+                  This critical feedback allows us to improve our services and process when and where needed. This
+                  feedback and improvement cycle is one of the many ways that help us set ourselves apart from the
+                  competition.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>A Note About Our Process</summary>
+              <div class="accordian-content">
+                <p>To help assure our cost estimates are as accurate as possible, we use allowances based on the
+                  preferences and priorities we discussed in Step 2.</p>
+                <p>In Step 4, unless you have made all of the needed product, material, and finish selections, the cost
+                  estimates we prepare will have “allowances” for the selections you will make later. As you can imagine,
+                  there is a wide range of costs among different types and qualities of products, materials, and finishes.
+                </p>
+                <p>Why do we do this? Knowing most people are conditioned to go with lower-priced proposals, some
+                  contractors use allowances that are below what will cover the cost of the products, materials and finish
+                  selections you are likely to pick. In this way, those contractors hope to get homeowners to sign on the
+                  dotted line. But when those homeowners start making selections, their actual project costs can
+                  skyrocket.</p>
+              </div>
+            </details>
+          </div>
+          <figure class="second column">
+            <img
+              src="https://static.wixstatic.com/media/1f7967_0bb9d4d7ab444069b94b065fedef1f19~mv2.jpg/v1/fit/w_1667,h_651,q_90,enc_avif,quality_auto/1f7967_0bb9d4d7ab444069b94b065fedef1f19~mv2.jpg"
+              alt="">
+          </figure>
+          <figure class="second-mobile column">
+            <img
+              src="https://static.wixstatic.com/media/1f7967_106e5a0c146b4f3eb7e126d1c06c764d~mv2.jpg/v1/fill/w_890,h_553,q_90,enc_avif,quality_auto/1f7967_106e5a0c146b4f3eb7e126d1c06c764d~mv2.jpg"
+              alt="">
+          </figure>
+        </split-panel>
+      </div>
+  
+      <!-- section 2 - basic text -->
+      <container>
+      <div class="max-width">
+        <div data-stack data-gap="s">
+          <h4>Where We Work</h4>
+          <p>Proudly serving the heart of Central Arkansas! From the vibrant streets of Little Rock and North Little Rock to the charming community of Maumelle, we're here for you. We also bring our expertise to many of your favorite neighborhoods—because great service starts right where you are!</p>
+        </div>
+        <card-row data-row data-columns="2" data-gap="s" data-collapse="s" class="whereWeWork">
+          <dwh-card>
+            <ul>
+              <li>Chenal Valley</li>
+              <li>Heights</li>
+              <li>Hillcrest</li>
+              <li>Cammack Village</li>
+              <li>Pleasant Valley</li>
+              <li>Brody Creek</li>
+              <li>Woodlands Edge</li>
+              
+              
+            </ul>
           </dwh-card>
           <dwh-card>
-            <div class="image-container">
-              <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
-                alt="Dogwood Homes" class="cardImage">
-            </div>
-            <article data-stack data-align="start">
-              <h5 class="cardTitle">Basement Finishing</h5>
-              <p>Maximize your living space with our professional basement finishing services.</p>
-              <ul class="customList">
-                <li>Framing and drywall installation</li>
-                <li>Electrical wiring and lighting</li>
-                <li>Plumbing installation</li>
-                <li>Flooring installation</li>
-                <li>Home theater setup</li>
-                <li>Wet bar installation</li>
-              </ul>
-              <a href="/" class="btn">Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon">
-                  <path
-                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                </svg>
-              </a>
-            </article>
-          </dwh-card>
-          <dwh-card>
-            <div class="image-container">
-              <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
-                alt="Dogwood Homes" class="cardImage">
-            </div>
-            <article data-stack data-align="start">
-              <h5 class="cardTitle">Home Additions</h5>
-              <p>Expand your living space with our carefully planned home additions.</p>
-              <ul class="customList">
-                <li>Second story additions</li>
-                <li>Room extensions</li>
-                <li>Sunroom additions</li>
-                <li>Garage conversions</li>
-                <li>Structural modifications</li>
-                <li>Permit acquisition</li>
-              </ul>
-              <a href="/" class="btn">Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon">
-                  <path
-                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                </svg>
-              </a>
-            </article>
-          </dwh-card>
-          <dwh-card>
-            <div class="image-container">
-              <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
-                alt="Dogwood Homes" class="cardImage">
-            </div>
-            <article data-stack data-align="start">
-              <h5 class="cardTitle">Outdoor Living</h5>
-              <p>Create beautiful outdoor spaces for relaxation and entertainment.</p>
-              <ul class="customList">
-                <li>Deck and patio construction</li>
-                <li>Outdoor kitchen installation</li>
-                <li>Fire pit and fireplace construction</li>
-                <li>Pergola and gazebo installation</li>
-                <li>Landscaping design</li>
-                <li>Outdoor lighting installation</li>
-              </ul>
-              <a href="/" class="btn">Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon">
-                  <path
-                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                </svg>
-              </a>
-            </article>
-          </dwh-card>
-          <dwh-card>
-            <div class="image-container">
-              <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
-                alt="Dogwood Homes" class="cardImage">
-            </div>
-            <article data-stack data-align="start">
-              <h5 class="cardTitle">Whole House Remodeling</h5>
-              <p>Complete transformation of your home with our comprehensive remodeling services.</p>
-              <ul class="customList">
-                <li>Design and planning</li>
-                <li>Interior and exterior renovation</li>
-                <li>Structural modifications</li>
-                <li>Electrical and plumbing upgrades</li>
-                <li>Flooring and painting</li>
-                <li>Kitchen and bathroom remodeling</li>
-              </ul>
-              <a href="/" class="btn">Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon">
-                  <path
-                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                </svg>
-              </a>
-            </article>
+            <ul>
+              <li>Otter Creek</li>
+              <li>Walton Heights</li>
+              <li>Lake Wood</li>
+              <li>The Park Hill Historic District</li>
+              <li>Maumelle</li>
+              <li>Indian Hills</li>
+              <li>Shady Valley </li>
+            </ul>
           </dwh-card>
         </card-row>
-      </section>
-    </div>
-    <!-- section 2 - basic text -->
-    <container>
-    <div class="max-width">
-      <div data-stack data-gap="s">
-        <h4>Where we work</h4>
-        <p>Proudly serving the heart of Central Arkansas! From the vibrant streets of Little Rock and North Little Rock to the charming community of Maumelle, we're here for you. We also bring our expertise to many of your favorite neighborhoods—because great service starts right where you are!</p>
       </div>
-      <card-row data-row data-columns="2" data-gap="s" data-collapse="s" class="whereWeWork">
-        <dwh-card>
-          <ul>
-            <li>Chenal Valley</li>
-            <li>Heights</li>
-            <li>Hillcrest</li>
-            <li>Cammack Village</li>
-            <li>Pleasant Valley</li>
-            <li>Brody Creek</li>
-            <li>Woodlands Edge</li>
-            
-            
-          </ul>
-        </dwh-card>
-        <dwh-card>
-          <ul>
-            <li>Otter Creek</li>
-            <li>Walton Heights</li>
-            <li>Lake Wood</li>
-            <li>The Park Hill Historic District</li>
-            <li>Maumelle</li>
-            <li>Indian Hills</li>
-            <li>Shady Valley </li>
-          </ul>
-        </dwh-card>
-      </card-row>
-    </div>
-    </container>
-   <!-- sectioni 7 - full footer -->
+      </container>
+    </main>
+    
+    <!-- sectioni 7 - full footer -->
     <section class="footerWrapper">
       <article class="siteFooterCTA max-width" data-cluster data-justify="between" data-align="center">
         <div>
@@ -429,6 +495,5 @@
       </footer>
     </section>
     
-  </main>
-</body>
+  </body>
 </html>

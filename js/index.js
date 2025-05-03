@@ -5,7 +5,7 @@ const elements = [
   "card-row",
   "dwh-card",
   "description-block",
-  "split-panel",
+  "split-panel"
 ];
 
 elements.forEach((tagName) => {
@@ -24,3 +24,10 @@ document.querySelectorAll("details").forEach((details) => {
     }
   });
 });
+
+// shoeLace drawer listerns
+const drawer = document.querySelector('.drawer-overview');
+const openButton = drawer.nextElementSibling;
+
+openButton.addEventListener('click', () => drawer.show());
+

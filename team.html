@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/index.js" type="module"></script>
+  <title>Dogwood Homes</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/carousel/carousel.js"></script>
+</head>
+
+<body class="home-page">
+  <!-- banner -->
+  <site-banner class="banner">
+    <div data-cluster data-justify="center" data-align="center" class="max-width-nav">
+      <p>Have a project you’ve been thinking about?</p>
+      <p>Contact us for a consultation and estimate.</p>
+      <a href="/" class="btn">Contact Us</a>
+    </div>
+  </site-banner>
+  <!-- nav -->
+  <nav class="site-nav max-width-nav" data-split data-split-1-4 data-gap="m" data-collapse="s" data-justify="between">
+    <a href="/">
+      <img src="./dogwood_homes-logo-ore.png" width=175 alt="Dogwood Homes Logo" class="navLink"/>
+    </a>
+    <div data-cluster data-justify="around" data-align="center" data-gap="m" class="navCluster">
+      <a href="/" class="navLink">Home</a>
+      <sl-dropdown>
+        <sl-button slot="trigger" caret><span class="upperCase">Services</span></sl-button>
+        <sl-menu>
+          <sl-menu-item><a href="/service-detail.html">Kitchen Remodel</a></sl-menu-item>
+          <sl-menu-item><a href="/service-detail.html">Bathroom Remodel</a></sl-menu-item>
+        </sl-menu>
+      </sl-dropdown>
+      <sl-dropdown>
+        <sl-button slot="trigger" caret><span class="upperCase">Portfolio</span></sl-button>
+        <sl-menu>
+          <sl-menu-item><a href="/projects.html">Bathrooms</a></sl-menu-item>
+        </sl-menu>
+      </sl-dropdown>
+      <sl-dropdown>
+        <sl-button slot="trigger" caret><span class="upperCase">About</span></sl-button>
+        <sl-menu>
+          <sl-menu-item><a href="/team.html">About Us</a></sl-menu-item>
+          <sl-menu-item><a href="/process.html">Our Process</a></sl-menu-item>
+        </sl-menu>
+      </sl-dropdown>
+      <a href="/" class="navLink">Contact</a>
+      <a href="/" class="navLink">Client Login</a>
+    </div>
+    <!-- mobile menu - shoelace -->
+    <div data-cluster data-justify="end" data-align="center" class="mobileMenu">
+      <sl-drawer label="" class="drawer-overview" style="--size: 100vw;">
+        <div data-stack justify="between">
+          <article data-stack>
+            <a href="/">Home</a>
+            <a href="/services.html">Services</a>
+            <a href="/">Portfolio</a>
+            <a href="/team.html">Meet the Team</a>
+            <a href="/process.html">Our Process</a>
+            <a href="/">Contact</a>
+            <a href="/">Client Login</a>
+          </article>
+          <a href="/">
+            <img src="./dogwood_homes-logo-ore.png" alt="Dogwood Homes Logo" width="150" class="navLink"/>
+          </a>
+      </div>
+      </sl-drawer>
+      <sl-button class="hamburger">
+        <svg width="32" height="32" viewBox="0 0 100 80" fill="hsl(201deg 16% 31%)">
+          <rect width="100" height="8"></rect>
+          <rect y="30" width="100" height="8"></rect>
+          <rect y="60" width="100" height="8"></rect>
+        </svg>
+    </sl-button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- section 1 - image with text -->
+    <site-hero class="hero">
+      <article class="heroImgWrapper">
+        <img class="heroImg" src="https://static.wixstatic.com/media/1f7967_5fa33a332c47491991e1fc0f0732ff05~mv2.jpg/v1/fill/w_890,h_553,q_90,enc_avif,quality_auto/1f7967_5fa33a332c47491991e1fc0f0732ff05~mv2.jpg" alt="Dogwood Homes about the team header">
+        <div class="gradient-overlay"></div>
+        <div class="heroMaxWidth">
+          <h1 class="heroText">The Dogwood Homes Team</h2>
+        </div>
+      </article>
+
+    </site-hero>
+
+      <!-- section 8 - Main Description Block, heading on right -->
+      <div class="max-width">
+        <description-block data-split data-split-2-3 data-gap="m" data-collapse="m" class="marginYLarge flipCol">
+          <div data-stack data-gap="s">
+            <p>
+              At Dogwood Homes, we're proud to bring you a dedicated team of staff and specialty craftsmen who work together to make your home transformation seamless and even enjoyable. Guided by Gareth and our experienced project and production management team, we have a glowing track record of delivering the expertise you need for everything every size remodle project.
+            </p>
+          </div>
+
+          <div class="centerVert">
+              <h4>Dedication to Service & Results</h4>
+          </div>
+        </description-block>
+      </div>
+
+
+      <div class="grey-background">
+        <div class="max-width">
+          <!-- section 11b - split - Text with heading and Image on Right -->
+          <description-block data-split data-split-3-4 data-gap="l" data-collapse="m" class="marginYLarge flipCol">
+              <div data-stack data-gap="s">
+                  <h6 class="upperCase">Owner | Project Manager</h6>
+                  <h4 class="upperCase">Gareth Hughes</h4>
+
+                  <p>Gareth started Dogwood Homes in 2016 after spending over 20 years working for The Hatcher Agency and learning how to deliver "Outrageous Service."  During this time, Gareth and his wife, Cristie, renovated and flipped several historical homes in Little Rock and North Little Rock.  He realized that he had a passion for remodeling homes and working with people.  So when starting Dogwood Homes, he wanted to bring that same outrageous service model he learned at The Hatcher Agency to the construction industry.</p>
+                  
+                  <p>Dogwood Homes has grown into a company with two project managers, one full-time designer, two part-time designers, and over 50 dedicated  sub-contractors.  Since 2016, Dogwood Homes has remodeled over 400 properties in the Central Arkansas area. Gareth is very involved with the local community having served on the board for Children's Protection Center and Big Brother Big Sisters in addition to sponsoring/donating to many other local organizations and schools. </p>
+              </div>
+              <article>
+                <img src="https://static.wixstatic.com/media/1f7967_40c799649a024fa0863320b197cdbffe~mv2.jpg/v1/crop/x_0,y_626,w_4337,h_5463/fill/w_298,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8674.jpg">
+            </article>
+          </description-block>
+          <!-- section 11c - split - Text with heading and Image on Left -->
+          <description-block data-split data-split-1-4 data-gap="l" data-collapse="m" class="marginYLarge marginTXL">
+            <article>
+              <img src="https://static.wixstatic.com/media/1f7967_98f6e2e6c1d04442aed9a395531b3d5e~mv2.jpg/v1/crop/x_0,y_177,w_4396,h_5531/fill/w_298,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8656.jpg">
+            </article>
+            <div data-stack data-gap="s">
+                <h6 class="upperCase">Owner | Project Manager</h6>
+                <h4 class="upperCase">Gareth Hughes</h4>
+
+                <p>Gareth started Dogwood Homes in 2016 after spending over 20 years working for The Hatcher Agency and learning how to deliver "Outrageous Service."  During this time, Gareth and his wife, Cristie, renovated and flipped several historical homes in Little Rock and North Little Rock.  He realized that he had a passion for remodeling homes and working with people.  So when starting Dogwood Homes, he wanted to bring that same outrageous service model he learned at The Hatcher Agency to the construction industry.</p>
+                
+                <p>Dogwood Homes has grown into a company with two project managers, one full-time designer, two part-time designers, and over 50 dedicated  sub-contractors.  Since 2016, Dogwood Homes has remodeled over 400 properties in the Central Arkansas area. Gareth is very involved with the local community having served on the board for Children's Protection Center and Big Brother Big Sisters in addition to sponsoring/donating to many other local organizations and schools. </p>
+            </div>
+          </description-block>
+        </div>
+      </div>
+
+      <div class="max-width">
+        <!-- section 11b - split - Text with heading and Image on Right -->
+        <description-block data-split data-split-3-4 data-gap="l" data-collapse="m" class="marginYLarge flipCol">
+            <div data-stack data-gap="s">
+                <h6 class="upperCase">Project Coordinator</h6>
+                <h4 class="upperCase">Randy Wooley</h4>
+
+                <p>Randy brings a variety of experience to us including law enforcement, management, insurance, and remodeling. He met Gareth many years ago when they both worked at The Hatcher Agency. Randy began his construction and remodeling career as a project manager for the Hatcher Agency—overseeing building renovation for numerous commercial buildings and residential projects.  He has been part of the Dogwood Homes team since 2017 and will be a face you see from beginning to end on your home project. </p>
+                
+            </div>
+            <article>
+              <img src="https://static.wixstatic.com/media/1f7967_04af4448e3f94568b9c05602dc705ed0~mv2.jpg/v1/crop/x_0,y_118,w_4396,h_5533/fill/w_298,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8588.jpg">
+          </article>
+        </description-block>
+        <!-- section 11c - split - Text with heading and Image on Left -->
+        <description-block data-split data-split-1-4 data-gap="l" data-collapse="m" class="marginYLarge marginTXL">
+          <article>
+            <img src="https://static.wixstatic.com/media/1f7967_657a4c4c0e2e4ded8f125cd8eef77ff7~mv2.jpg/v1/crop/x_0,y_221,w_4396,h_5531/fill/w_298,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8631.jpg">
+          </article>
+          <div data-stack data-gap="s">
+              <h5 class="upperCase">Project Coordinator</h5>
+              <h4 class="upperCase">Jason Duncan</h4>
+
+              <p>Jason Duncan is an architectural designer and professional builder with more than 20 years of industry experience.  He has been designing custom homes since 2016 and managing high-end residential construction since 2017. He enjoys incorporating industrial materials, smart home technology, and advanced manufacturing techniques into home design. Jason equally enjoys the challenge of helping clients find their own cohesive theme for their building projects. Jason loves what he does. He became a designer and builder because he's fascinated by how our built environment influences and affects our quality of life as well as our mental and emotional health.  He uses industrial materials, smart home technology, and advanced manufacturing techniques into home design.  Duncan equally enjoys the challenge of helping clients find their own cohesive theme for their building projects. </p>
+          </div>
+        </description-block>
+        <!-- section 11b - split - Text with heading and Image on Right -->
+        <description-block data-split data-split-3-4 data-gap="l" data-collapse="m" class="marginYLarge marginTXL flipCol">
+          <div data-stack data-gap="s">
+              <h5 class="upperCase">Interior Designer</h5>
+              <h4 class="upperCase">Sarah Jaynes</h4>
+
+              <p>
+                Sarah has a passion for interior design that began back in 7th grade when she spent the day shadowing an interior designer for career day. Over 30 years later, she still loves the work that allows her to help clients create a beautiful space that they can call home.
+              </p>
+              <p>
+                Sarah graduated from the University of Arkansas in 2002 with a Bachelor's degree in Interior Design. After several years working with and learning from well-established design companies and home builders in Northwest Arkansas, she started her own business, InsideOut Designs. She offers a wide range of design services - from paint color consulting to fabric and furniture selections, all the way to full-scope new home construction.  Her business is based out of Fayetteville where her personal and professional life continues to grow and thrive.
+              </p>
+              <p>
+                Sarah and Cristie are lifelong friends and have teamed up throughout the years on many design projects. They bring their individual skill sets and strengths, blending them together for a well executed design aesthetic.
+              </p>
+          </div>
+          <article>
+            <img src="https://static.wixstatic.com/media/1f7967_d9b1707288ca42bf8c0f8eabbaf40061~mv2.jpg/v1/crop/x_0,y_212,w_3000,h_3775/fill/w_298,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_9967.jpg">
+        </article>
+        </description-block>
+      </div>
+
+      <!-- contractors -->
+      <div class="grey-background">
+        <div class="max-width">
+          <description-block data-split data-split-1-2 data-gap="l" data-collapse="m" class="marginYLarge">
+            <article>
+              <img src="https://static.wixstatic.com/media/1f7967_9872f15f733f4d9f97b0eea365761547~mv2.jpg/v1/fit/w_1682,h_722,q_90,enc_avif,quality_auto/1f7967_9872f15f733f4d9f97b0eea365761547~mv2.jpg">
+            </article>
+            <div data-stack data-gap="s">
+                <h4 class="upperCase">our specialty contractors</h4>
+
+                <p>At Dogwood Homes, we understand that delivering the best results for your home remodeling or custom home construction requires specialized expertise.
+
+                  </p><p>That's why we collaborate with a trusted network of highly skilled professionals, including architects, designers, electricians, plumbers, and tile specialists. These experts are carefully selected to bring their incredible knowledge and professionalism to every project.</p>
+                  
+                </p><p>Our specialty contractors are registered, insured, and licensed, ensuring every detail is handled with precision and care. To maintain the highest standards, our team closely supervises all specialty contractors and coordinates their work seamlessly with our staff.</p>
+                  
+                </p><p>Many of these experts have partnered with us for years, sharing our commitment to quality and delivering exceptional results on every project, from residential renovations to luxury home building.</p>
+            </div>
+          </description-block>
+        </div>
+      </div>
+
+
+  </main>
+
+  <!-- sectioni 7 - full footer -->
+  <section class="footerWrapper">
+    <article class="siteFooterCTA max-width" data-cluster data-justify="between" data-align="center">
+      <div>
+        <h3>Ready to Transform Your Space?</h3>
+        <p>Contact us today to schedule a consultation and take the first step toward your dream home.</p>
+      </div>
+      <p class="footerCtaButton">Get Started → </p>
+    </article>
+    <footer class="site-footer max-width" data-row data-columns="2" data-collapse="m">
+      <nav data-row data-columns="2" data-gap="m" data-collapse="s">
+        <article data-stack class="footerText">
+          <h6 class="footerHeader">Dogwood Homes</h6>
+          <p>Quality craftsmanship and innovative designs for all your remodeling needs. Trusted by homeowners since 2010.</p>
+          <div class="paddingTop" data-cluster data-gap="s">
+            <a href="/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="/">
+              <svg  version="1.1" viewBox="0 0 512 512" xml:space="preserve" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><g><path d="M505,257c0,34.8-0.7,69.7,0.2,104.5c1.5,61.6-37.2,109.2-86.5,130.4c-19.8,8.5-40.6,13-62.1,13c-67.3,0.1-134.7,1-202-0.3   c-50.7-1-92.4-22.2-122.3-64c-15.7-22-23.2-47-23.2-74.1c0-71.7,0-143.3,0-215c0-58.5,28.5-99.4,79.1-126C110.2,14,134.1,9.1,159,9   c65.3,0,130.7-0.4,196,0.2c50.7,0.4,93,19.8,124.2,60.6c17.4,22.8,25.8,49,25.8,77.8C505,184,505,220.5,505,257z M46,257   c0,36.7,0,73.3,0,110c0,16.4,3.8,31.8,12.3,45.7c22.3,36.5,56,54.3,97.8,55c67.1,1,134.3,0.4,201.5,0.2c16.5,0,32.5-3.4,47.4-10.5   c40.6-19.4,63.3-50.3,63.1-96.7c-0.4-71-0.1-142-0.1-213c0-20.1-5.7-38.5-17.6-54.7c-23-31.1-54.8-46.4-92.8-46.8   c-67-0.8-134-0.3-201-0.2c-14.3,0-28.1,2.9-41.5,7.9c-36.8,13.7-71,48.4-69.4,99.5C46.9,188,46,222.5,46,257z"/><path d="M257.6,363c-64.5,0-116.5-51.4-116.6-115.4c-0.1-63,52.3-114.6,116.4-114.6c64.3-0.1,116.5,51.4,116.6,114.9   C374,311.3,321.9,362.9,257.6,363z M257.6,326c43.9,0,79.5-35.1,79.4-78.3c-0.1-42.8-35.7-77.8-79.4-77.8   c-43.9,0-79.7,34.9-79.7,78C178,291.1,213.7,326.1,257.6,326z"/><path d="M387.5,98c13.5,0,24.5,11.5,24.5,25.6c-0.1,14.1-11.2,25.5-24.7,25.4c-13.3-0.1-24.2-11.5-24.2-25.3   C363,109.6,374,98,387.5,98z"/></g></svg>
+            </a>
+          </div>
+        </article>
+        <article data-stack >
+          <h6 class="footerHeader">Quick Links</h6>
+          <a href="/">Home</a>
+          <a href="/services.html">Services</a>
+          <a href="/">Projects</a>
+          <a href="/">About Us</a>
+          <a href="/">Tesitmonials</a>
+        </article>
+      </nav>
+      <nav data-row data-columns="2" data-gap="m" data-collapse="s">
+        <article data-stack class="footerText" >
+          <h6 class="footerHeader">Our Services</h6>
+          <a href="/">Kitchen Remodeling</a>
+          <a href="/">Bathroom Renovations</a>
+          <a href="/">Basement Finishing</a>
+          <a href="/">Home Additions</a>
+          <a href="/">Outdoor Living</a>
+        </article>
+        <article data-stack class="footerText">
+          <h6 class="footerHeader">Contact Us</h6>
+          <p>Dogwood Homes</p>
+          <p>706 N Tyler St, Little Rock, AR 72202</p>
+          <p>(501) 577-9009</p>
+          <p class="paddingTop"><a href="/">info@dogwoodhomes.com</a></p>
+          
+        </article>
+      </nav>
+    </footer>
+  </section>
+
+</body>
+</html>

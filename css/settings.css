@@ -25,6 +25,7 @@
   --space-xl: clamp(3.375rem, 3.2446rem + 0.6522vw, 3.75rem);
   --space-2xl: clamp(4.5rem, 4.3261rem + 0.8696vw, 5rem);
   --space-3xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+  --space-max: 1440px;
 
   /* One-up pairs */
   --space-3xs-2xs: clamp(0.3125rem, 0.2038rem + 0.5435vw, 0.625rem);
@@ -44,7 +45,7 @@
   --color-secondary: hsl(40, 80%, 80%);
   --color-tertiary: hsl(0, 0%, 95%);
   --color-accent: hsl(300, 60%, 50%);
-  --color-accent-2: hsl(210 20% 96%);
+  --color-accent-2: hsl(210, 60%, 39%);
   --color-text: hsl(201deg 16% 31%);
   --color-text-white: hsl(0, 0%, 95%);
   --color-selection: var(--color-secondary);

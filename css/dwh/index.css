@@ -230,6 +230,21 @@ dwh-card {
     object-fit: cover;
   }
 
+  /* portfolio card tweaks */
+  .portfolioLink {
+    text-decoration: none;
+    article {
+      padding-left: 0rem;
+      padding-bottom: 0rem;
+      color: var(--color-text);
+    }
+  }
+
+  .image-container.portfolioImg {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
   .cardImage {
     transition: transform 0.3s ease-in-out;
   }
@@ -241,13 +256,10 @@ dwh-card {
   article {
     padding: var(--space-m);
     background-color: #ffffff;
+    text-decoration: none;
 
     .cardTitle {
       padding-bottom: var(--space-s);
-    }
-
-    .customList {
-      padding: var(--space-s) 0;
     }
 
     .customList li::before {

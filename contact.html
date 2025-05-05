@@ -4,16 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/index.js" type="module"></script>
   <title>Dogwood Homes</title>
-
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/carousel/carousel.js"></script>
 </head>
 
-<body class="projects-page">
+<body class="home-page">
+
   <site-banner class="banner">
-    <p>some message goes here</p>
+    <div data-cluster data-justify="center" data-align="center" class="max-width-nav">
+      <p>Have a project you've been thinking about?</p>
+      <p>Contact us for a consultation and estimate.</p>
+      <a href="/" class="btn">Contact Us</a>
+    </div>
   </site-banner>
+
   <!-- top nav + mobile -->
   <nav class="site-nav max-width-nav" data-split data-split-1-4 data-gap="m" data-collapse="s" data-justify="between">
     <a href="/">
@@ -71,120 +79,95 @@
      </sl-button>
     </div>
   </nav>
-  <site-hero class="hero"></site-hero>
 
   <main>
-    <description-block data-split data-split-1-3 data-gap="s" data-collapse="m">
-      <h2>EXCELLENCE in BUILDING and REMODELING</h2>
 
-      <div data-stack data-gap="s">
-        <p>From custom kitchens to custom home building, Metro Building and Remodeling Group (MBRG) can assist with any
-          home remodel and construction project in Northern Virginia, Washington, D.C., and Montgomery County, Maryland.
-        </p>
+  <!-- Section - site description -->
+  <site-description class="site-description">
+    <h1>Bring Your Vision Home</h1>
+  </site-description>
 
-        <p>
-          We promise to deliver the top-quality home remodeling services with the very best client service you deserve.
-          Please see below for just a few examples of our recent projects.</p>
-      </div>
-    </description-block>
+  <!-- basic text -->
+  <section class="max-width">
+  <div data-stack data-gap="s" class="marginBLarge">
+    <p>Your dream home starts with a conversation. At Dogwood Homes, we're passionate about designing and building spaces that reflect your life and style — from inspired remodels to custom builds.
+    </p>
+    <p>
+    If you're in Little Rock or Central Arkansas and ready to talk about your next project, we invite you to get in touch. Use the form below, send us an email, or give us a call — we can't wait to hear what you're dreaming up.
+    </p>
+    <p>Once you submit your message, it's immediately sent to the owner of Dogwood Homes, who will create a project entry in our tracking system and begin reviewing the details you've shared. If we're in the middle of launching a new project, our team may be fully engaged on-site, so it could take a couple of days to receive a reply. But rest assured — once our intake process is complete, the owner will personally reach out to discuss your project and next steps.</p>
+  </div>
+  </section>
 
-
-    <section data-grid data-gap="s" data-collapse="s">
-      <dwh-card>
-        <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
-          alt="Dogwood Homes">
-        <h3>Kitchen Remodeling</h3>
-      </dwh-card>
-      <dwh-card>
-        <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
-          alt="Dogwood Homes">
-        <h3>Bathroom Remodeling</h3>
-      </dwh-card>
-      <dwh-card>
-        <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
-          alt="Dogwood Homes">
-        <h3>Basement Remodeling</h3>
-      </dwh-card>
-      <dwh-card>
-        <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
-          alt="Dogwood Homes">
-        <h3>Home Addition</h3>
-      </dwh-card>
-      <dwh-card>
-        <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
-          alt="Dogwood Homes">
-        <h3>Home Additions</h3>
-      </dwh-card>
-      <dwh-card>
-        <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
-          alt="Dogwood Homes">
-        <h3>Whole Home Remodeling</h3>
-      </dwh-card>
-      <dwh-card>
-        <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
-          alt="Dogwood Homes">
-        <h3>Custom Homes</h3>
-      </dwh-card>
-      <dwh-card>
-        <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
-          alt="Dogwood Homes">
-        <h3>Custom Homes</h3>
-      </dwh-card>
-      <dwh-card>
-        <img src="https://static.wixstatic.com/media/1f7967_d928a2f9be0745ce8a04a789dea082e1~mv2.jpg"
-          alt="Dogwood Homes">
-        <h3>Custom Homes</h3>
-      </dwh-card>
+  <!-- contact Form Wrapper -->
+  <div data-split data-split-1-4 gap="s" collapse="m" class="max-width">
+    <section>
+      <h3 class="marginBMedium">Dogwood Homes</h3>
+      <p class="marginBMedium">Quality craftsmanship and innovative designs for all your remodeling needs. Trusted by homeowners since 2010.</p>
+      <p>123 Tyler St</p>
+      <p>Little Rock, AR 72202</p>
+      <p>Monday - Friday: 9-4</p>
     </section>
-
-    <!-- section - featureGalleries -->
-    <div class="max-width featureGalleries">
-      <h4 class="marginYLarge upperCase">Remodeling & Design Showcase</h4>
-      <card-row data-flex data-gap="m" class="marginBLarge">
-        <div class="image-card">
-          <a href="/projects.html">
-            <picture>
-              <source srcset="https://picsum.photos/id/87/500" media="(max-width: 500px)">
-              <source srcset="https://picsum.photos/id/123/700" media="(max-width: 700px)">
-              <source srcset="https://picsum.photos/id/125/300" media="(max-width: 1000px)">
-              <img src="https://picsum.photos/id/100/300" alt="Responsive image example">
-            </picture>
-            <div class="overlay">
-              <h5>Modern & Contemporary</h5>
-            </div>
-          </a>
+    <!-- contact Form -->
+    <div class="form-container">
+      <form>
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" required />
         </div>
-        <div class="image-card">
-          <a href="/projects.html">
-          <img src="https://picsum.photos/id/128/300" alt="Example" />
-          <div class="overlay">
-            <h5>Farmhouse</h5>
-          </div>
-        </a>
+  
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" required />
         </div>
-        <div class="image-card">
-          <a href="/projects.html">
-          <img src="https://picsum.photos/id/136/300" alt="Example" />
-          <div class="overlay">
-            <h5>Craftsman</h5>
-          </div>
-        </a>
+  
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
         </div>
-        <div class="image-card">
-          <a href="/projects.html">
-            <picture>
-              <source srcset="https://picsum.photos/id/164/300" media="(max-width: 1020px)">
-              <source srcset="https://picsum.photos/id/123/1000" media="(max-width: 1355px)">
-              <img src="https://picsum.photos/id/164/300" alt="Responsive image example">
-            </picture>
-          <!-- <img src="https://picsum.photos/id/164/300" alt="Example" /> -->
-          <div class="overlay">
-            <h5>Historical</h5>
-          </div>
-        </a>
+  
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" />
         </div>
-      </card-row>
+  
+        <div class="form-group">
+          <label for="address">Property Address</label>
+          <input type="text" id="address" name="address" />
+        </div>
+  
+        <div class="form-group">
+          <label for="sqft">Square Footage</label>
+          <input type="number" id="sqft" name="sqft" />
+        </div>
+  
+        <div class="form-group">
+          <label for="startDate">Desired Start Date</label>
+          <input type="date" id="startDate" name="startDate" />
+        </div>
+  
+        <div class="form-group">
+          <label for="endDate">Desired Completion Date</label>
+          <input type="date" id="endDate" name="endDate" />
+        </div>
+  
+        <div class="form-group">
+          <label for="budget">Estimated Budget</label>
+          <input type="text" id="budget" name="budget" />
+        </div>
+  
+        <div class="form-group-full">
+          <label for="scope">Scope of Work</label>
+          <textarea id="scope" name="scope" placeholder="Tell us more about your project..."></textarea>
+        </div>
+  
+        <div class="form-group-full">
+          <button type="submit" class="submit-btn">Send Message</button>
+        </div>
+      </form>
     </div>
+  </div>
+
 
   </main>
 
@@ -236,16 +219,5 @@
     </footer>
   </section>
 
-
-
-
-  <main>
-  </main>
-
-
-
-
-
 </body>
-
 </html>

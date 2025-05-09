@@ -25,6 +25,7 @@ body {
   max-width: var(--space-max);
   margin: 0 auto;
   padding: var(--space-m);
+  width: 100%;
 }
 
 .max-width-nav {
@@ -103,6 +104,7 @@ site-banner {
     width: 100%;
     height: auto; 
   }
+
   sl-button::part(base) {
     border: none; 
     box-shadow: none;

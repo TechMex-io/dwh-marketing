@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "build": "postcss css/index.css -o css/styles.css",
-    "watch": "postcss css/index.css -o css/styles.css --watch"
-  },
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "serve": "vite build && vite preview"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,5 +20,10 @@
     "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",
     "postcss-minify": "^1.1.0"
+  },
+  "packageManager": "pnpm@9.6.0+sha1.65cd48c20dd329b7f455088b6dd17d4d5b6d02e3",
+  "dependencies": {
+    "@shoelace-style/shoelace": "^2.20.1",
+    "vite": "^6.3.5"
   }
 }

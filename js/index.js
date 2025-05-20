@@ -1,3 +1,16 @@
+// Shoelace theme
+import '@shoelace-style/shoelace/dist/themes/light.css';
+// custom css
+import '../css/index.css';
+// Only the Shoelace components used
+import '@shoelace-style/shoelace/dist/components/dropdown/dropdown.js';
+import '@shoelace-style/shoelace/dist/components/button/button.js';
+import '@shoelace-style/shoelace/dist/components/menu/menu.js';
+import '@shoelace-style/shoelace/dist/components/menu-item/menu-item.js';
+import '@shoelace-style/shoelace/dist/components/carousel/carousel.js';
+import '@shoelace-style/shoelace/dist/components/drawer/drawer.js';
+import '@shoelace-style/shoelace/dist/components/image-comparer/image-comparer.js'
+
 const elements = [
   "site-banner",
   "site-hero",

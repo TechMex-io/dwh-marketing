@@ -18,7 +18,8 @@ export default defineConfig({
         projects: path.resolve(__dirname, 'projects.html'),
         serviceDetail: path.resolve(__dirname, 'service-detail.html'),
         services: path.resolve(__dirname, 'services.html'),
-        team: path.resolve(__dirname, 'team.html')
+        team: path.resolve(__dirname, 'team.html'),
+        design: path.resolve(__dirname, 'design.html')
         // Add more pages as needed
       }
     }

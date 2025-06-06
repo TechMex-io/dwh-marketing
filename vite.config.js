@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import path from 'path';
-
+//checking stuff here remove later
 export default defineConfig({
   root: './', // this is because the HTML files are in the root
   server: {
